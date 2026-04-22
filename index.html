@@ -73,9 +73,9 @@
   <div class="controls">
     <span class="grp-label">Range:</span>
     <div class="tgl">
-      <button class="tb on" id="btn-rall" onclick="setRange('all')">2025–2026</button>
+      <button class="tb" id="btn-rall" onclick="setRange('all')">2025–2026</button>
       <button class="tb" id="btn-r2025" onclick="setRange('2025')">2025 only</button>
-      <button class="tb" id="btn-rytd" onclick="setRange('ytd')">2026 YTD</button>
+      <button class="tb on" id="btn-rytd" onclick="setRange('ytd')">2026 YTD</button>
     </div>
   </div>
 
@@ -109,7 +109,7 @@ function ip(m){return dataIP[m]||0;}
 function ww(m){return wwag[m]||0;}
 function total(m){return ig(m)+web(m)+ip(m)+ww(m);}
 
-let currentRange='all', mixChart=null;
+let currentRange='ytd', mixChart=null;
 
 function fmt(v){return v<0?'-$'+Math.round(Math.abs(v)).toLocaleString():'$'+Math.round(v).toLocaleString();}
 function fmtChg(v){return(v>=0?'+':'')+fmt(v);}
