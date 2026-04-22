@@ -1,6 +1,0 @@
-{
-  "crons": [{
-    "path": "/api/shopify-weekly-export",
-    "schedule": "0 8 * * 1"
-  }]
-}
