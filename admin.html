@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Admin</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 32px 24px; }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 16px; font-weight: 600; margin-bottom: 24px; }
+  .zone { border: 2px dashed rgba(0,0,0,0.2); border-radius: 12px; padding: 40px; text-align: center; cursor: pointer; transition: border-color .15s, background .15s; margin-bottom: 16px; }
+  .zone.over { border-color: #2D6A4F; background: rgba(45,106,79,0.05); }
+  .zone.loaded { border-color: #2D6A4F; border-style: solid; }
+  .zone-label { font-size: 13px; color: #666; }
+  .zone-label strong { color: #1a1a18; }
+  .zone input[type=file] { display: none; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 24px; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid rgba(0,0,0,0.1); }
+  th { background: #eeecea; padding: 8px 12px; text-align: right; font-weight: 600; color: #444; }
+  th:first-child { text-align: left; }
+  td { padding: 7px 12px; text-align: right; border-top: 1px solid rgba(0,0,0,0.06); }
+  td:first-child { text-align: left; font-weight: 500; }
+  tr:last-child td { font-weight: 600; background: #f9f8f6; }
+  .footer { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  input[type=password] { padding: 8px 12px; border: 1px solid rgba(0,0,0,0.2); border-radius: 8px; font-size: 13px; width: 200px; }
+  button { padding: 9px 20px; background: #2D6A4F; color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; }
+  button:disabled { opacity: 0.4; cursor: default; }
+  .status { font-size: 12px; color: #666; margin-top: 12px; }
+  .status.ok  { color: #2D6A4F; }
+  .status.err { color: #A32D2D; }
+  .tag { display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 6px; border-radius: 4px; background: #eeecea; color: #666; margin-left: 6px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Sugarcoat Dashboard — Data Update</h1>
+
+  <div class="zone" id="shopifyZone" onclick="document.getElementById('shopifyFile').click()">
+    <input type="file" id="shopifyFile" accept=".jsonl" multiple>
+    <p class="zone-label"><strong>Shopify JSONL</strong> — drop file(s) here or click to browse<br>
+    <span style="font-size:11px;margin-top:4px;display:block">Sales by Channel by Month export from Shopify Reports</span></p>
+  </div>
+
+  <div id="preview" style="display:none">
+    <table id="previewTable">
+      <thead><tr>
+        <th>Month</th>
+        <th style="color:#993556">Instagram</th>
+        <th style="color:#2D6A4F">Website</th>
+        <th style="color:#4A90C4">In-person</th>
+        <th>Total (excl. WWAG)</th>
+      </tr></thead>
+      <tbody id="previewBody"></tbody>
+    </table>
+    <div class="footer">
+      <input type="password" id="secret" placeholder="Admin password">
+      <button id="commitBtn" onclick="commit()">Commit &amp; Deploy</button>
+    </div>
+    <p class="status" id="status"></p>
+  </div>
+</div>
+
+<script>
+const IG_CH  = new Set(['Draft Orders','IG Live Sales','Sugar Live Invoicer','Facebook & Instagram']);
+const WEB_CH = new Set(['Online Store','Shop']);
+const IP_CH  = new Set(['Point of Sale','Shopify Mobile for iPhone']);
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+let processedData = null;
+
+function fmt(v) { return v === 0 ? '—' : (v < 0 ? '-$' : '$') + Math.abs(Math.round(v)).toLocaleString(); }
+
+function parseJSONL(text) {
+  const out = {};
+  for (const line of text.split('\n')) {
+    if (!line.trim()) continue;
+    const { month, sales_channel, net_sales } = JSON.parse(line);
+    const m = month.slice(0, 7);
+    if (!out[m]) out[m] = { ig: 0, web: 0, ip: 0 };
+    const amt = Math.round(net_sales);
+    if (IG_CH.has(sales_channel))       out[m].ig  += amt;
+    else if (WEB_CH.has(sales_channel)) out[m].web += amt;
+    else if (IP_CH.has(sales_channel))  out[m].ip  += amt;
+  }
+  return out;
+}
+
+async function loadFiles(files) {
+  const merged = {};
+  for (const file of files) {
+    const text = await file.text();
+    const parsed = parseJSONL(text);
+    for (const [m, v] of Object.entries(parsed)) {
+      if (!merged[m]) merged[m] = { ig: 0, web: 0, ip: 0 };
+      merged[m].ig  += v.ig;
+      merged[m].web += v.web;
+      merged[m].ip  += v.ip;
+    }
+  }
+  processedData = merged;
+  renderPreview(merged);
+}
+
+function renderPreview(data) {
+  const months = Object.keys(data).sort();
+  let totIG = 0, totWEB = 0, totIP = 0;
+  const rows = months.map(m => {
+    totIG += data[m].ig; totWEB += data[m].web; totIP += data[m].ip;
+    const [y, mo] = m.split('-');
+    const label = MONTHS[+mo-1] + ' ' + y;
+    const tot = data[m].ig + data[m].web + data[m].ip;
+    return `<tr><td>${label}</td><td>${fmt(data[m].ig)}</td><td>${fmt(data[m].web)}</td><td>${fmt(data[m].ip)}</td><td>${fmt(tot)}</td></tr>`;
+  });
+  rows.push(`<tr><td>Total</td><td>${fmt(totIG)}</td><td>${fmt(totWEB)}</td><td>${fmt(totIP)}</td><td>${fmt(totIG+totWEB+totIP)}</td></tr>`);
+  document.getElementById('previewBody').innerHTML = rows.join('');
+  document.getElementById('preview').style.display = '';
+}
+
+async function commit() {
+  const secret = document.getElementById('secret').value;
+  if (!secret) { setStatus('Enter admin password', 'err'); return; }
+  if (!processedData) { setStatus('No data loaded', 'err'); return; }
+
+  document.getElementById('commitBtn').disabled = true;
+  setStatus('Committing…', '');
+
+  try {
+    const res = await fetch('/api/commit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ secret, byMonth: processedData }),
+    });
+    const json = await res.json();
+    if (!res.ok) throw new Error(json.error || res.statusText);
+    setStatus('Deployed! Vercel will redeploy in ~30s.', 'ok');
+  } catch (e) {
+    setStatus('Error: ' + e.message, 'err');
+  } finally {
+    document.getElementById('commitBtn').disabled = false;
+  }
+}
+
+function setStatus(msg, cls) {
+  const el = document.getElementById('status');
+  el.textContent = msg;
+  el.className = 'status ' + cls;
+}
+
+// Drag & drop
+const zone = document.getElementById('shopifyZone');
+zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
+zone.addEventListener('dragleave', () => zone.classList.remove('over'));
+zone.addEventListener('drop', e => {
+  e.preventDefault();
+  zone.classList.remove('over');
+  zone.classList.add('loaded');
+  loadFiles([...e.dataTransfer.files].filter(f => f.name.endsWith('.jsonl')));
+});
+document.getElementById('shopifyFile').addEventListener('change', e => {
+  zone.classList.add('loaded');
+  loadFiles([...e.target.files]);
+});
+</script>
+</body>
+</html>
