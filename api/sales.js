@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       client_id: SHOPIFY_CLIENT_ID,
       client_secret: SHOPIFY_CLIENT_SECRET,
       grant_type: 'client_credentials',
-      scope: 'read_analytics,read_orders',
+      scope: 'read_analytics,read_orders,read_all_orders',
     }),
   });
 
@@ -22,6 +22,8 @@ export default async function handler(req, res) {
   }
 
   const byMonth = {};
+  const seenChannels = new Set();
+  let totalOrders = 0;
   let cursor = null;
   let hasNextPage = true;
 
@@ -58,6 +60,8 @@ export default async function handler(req, res) {
       const month = node.createdAt.slice(0, 7);
       const channel = node.channelInformation?.channelDefinition?.channelName ?? '';
       const amount = parseFloat(node.currentSubtotalPriceSet.shopMoney.amount);
+      seenChannels.add(channel);
+      totalOrders++;
 
       if (!byMonth[month]) byMonth[month] = { ig: 0, web: 0, ip: 0 };
 
@@ -78,5 +82,5 @@ export default async function handler(req, res) {
   }
 
   res.setHeader('Cache-Control', 's-maxage=3600');
-  res.json(byMonth);
+  res.json({ byMonth, debug: { seenChannels: [...seenChannels].sort(), totalOrders } });
 }
