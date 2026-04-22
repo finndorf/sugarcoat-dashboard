@@ -1,0 +1,4 @@
+.vercel
+.env*.local
+data/shopify/*.jsonl
+data/wwag.json
