@@ -7,7 +7,15 @@ export default async function handler(req, res) {
 
   const shopifyql = 'FROM sales SHOW net_sales GROUP BY month, sales_channel SINCE 2025-01-01 ORDER BY month ASC';
 
-  const gqlRes = await fetch(`https://${SHOPIFY_STORE}/admin/api/2026-04/graphql.json`, {
+  // Check token scopes
+  const scopeRes = await fetch(`https://${SHOPIFY_STORE}/admin/api/2024-10/graphql.json`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Shopify-Access-Token': SHOPIFY_ACCESS_TOKEN },
+    body: JSON.stringify({ query: '{ currentAppInstallation { accessScopes { handle } } }' }),
+  });
+  const scopeData = await scopeRes.json();
+
+  const gqlRes = await fetch(`https://${SHOPIFY_STORE}/admin/api/2024-10/graphql.json`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -24,7 +32,7 @@ export default async function handler(req, res) {
 
   const result = await gqlRes.json();
   const tableData = result.data?.shopifyqlQuery?.tableData;
-  if (!tableData) return res.status(500).json(result);
+  if (!tableData) return res.status(500).json({ scopeData, result });
 
   const { columns, rowData } = tableData;
   const mi = columns.findIndex(c => c.name === 'month');
