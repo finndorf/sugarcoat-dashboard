@@ -19,24 +19,15 @@ export default async function handler(req, res) {
   // Temporary: expose token scope for debugging
   const tokenScope = tokenData.scope;
 
-  const shopifyql = 'FROM sales SHOW net_sales GROUP BY month, sales_channel SINCE 2025-01-01 UNTIL 2026-04-30 ORDER BY month ASC';
-
   const gqlRes = await fetch(`https://${SHOPIFY_STORE}/admin/api/2026-04/graphql.json`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'X-Shopify-Access-Token': tokenData.access_token,
     },
-    body: JSON.stringify({
-      query: `mutation { shopifyqlQuery(query: ${JSON.stringify(shopifyql)}) {
-        __typename
-        ... on TableResponse { tableData { rowData columns { name dataType } } }
-        ... on ParseErrorResponse { parseErrors { code message } }
-      }}`,
-    }),
+    body: JSON.stringify({ query: '{ shop { name plan { displayName } } }' }),
   });
 
   const data = await gqlRes.json();
-  res.setHeader('Cache-Control', 's-maxage=3600');
   res.json({ tokenScope, data });
 }
