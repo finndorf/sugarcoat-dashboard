@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sugarcoat Home — Sales Dashboard</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f4f0; color: #1a1a18; padding: 24px; }
@@ -87,6 +88,7 @@
 </div>
 
 <script>
+Chart.register(ChartDataLabels);
 const ALL_MONTHS=['2025-01','2025-02','2025-03','2025-04','2025-05','2025-06','2025-07','2025-08','2025-09','2025-10','2025-11','2025-12','2026-01','2026-02','2026-03','2026-04'];
 function lbl(m){const[y,mo]=m.split('-');return['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+mo-1]+' '+y.slice(2);}
 function monthName(m){const[y,mo]=m.split('-');return['January','February','March','April','May','June','July','August','September','October','November','December'][+mo-1]+' '+y;}
@@ -179,18 +181,37 @@ function buildLegend(id,items){document.getElementById(id).innerHTML=items.map(i
 
 function renderMix(){
   const months=getMonths(),labels=months.map(lbl);
-  buildLegend('leg-mix',[{c:C_IG,label:'Instagram'},{c:C_WEB,label:'Website'},{c:C_IP,label:'In-person'},{c:C_WW,label:'WWAG'}]);
+  buildLegend('leg-mix',[{c:C_IG,label:'Instagram'},{c:C_WEB,label:'Website'},{c:C_IP,label:'In-person'},{c:C_WW,label:'WWAG'},{c:'#888780',label:'Trend'}]);
   if(mixChart) mixChart.destroy();
+  const igD=months.map(m=>Math.round(ig(m)));
+  const webD=months.map(m=>Math.round(web(m)));
+  const ipD=months.map(m=>Math.round(ip(m)));
+  const wwD=months.map(m=>Math.round(ww(m)));
+  const totD=months.map((_,i)=>igD[i]+webD[i]+ipD[i]+wwD[i]);
   mixChart=new Chart(document.getElementById('mixChart'),{
     type:'bar',
     data:{labels,datasets:[
-      {label:'Instagram',data:months.map(m=>Math.round(ig(m))),backgroundColor:C_IG,stack:'s'},
-      {label:'Website',data:months.map(m=>Math.round(web(m))),backgroundColor:C_WEB,stack:'s'},
-      {label:'In-person',data:months.map(m=>Math.round(ip(m))),backgroundColor:C_IP,stack:'s'},
-      {label:'WWAG',data:months.map(m=>Math.round(ww(m))),backgroundColor:C_WW,stack:'s'}
+      {label:'Instagram',data:igD,backgroundColor:C_IG,stack:'s',datalabels:{display:false}},
+      {label:'Website',data:webD,backgroundColor:C_WEB,stack:'s',datalabels:{display:false}},
+      {label:'In-person',data:ipD,backgroundColor:C_IP,stack:'s',datalabels:{display:false}},
+      {label:'WWAG',data:wwD,backgroundColor:C_WW,stack:'s',datalabels:{
+        display:true,anchor:'end',align:'end',offset:2,
+        formatter:(_,ctx)=>fmt(totD[ctx.dataIndex]),
+        font:{size:9,weight:'600'},color:'#1a1a18'
+      }},
+      {type:'line',label:'Trend',data:totD,borderColor:'#888780',backgroundColor:'transparent',
+       borderWidth:1.5,borderDash:[5,4],pointRadius:3,pointBackgroundColor:'#888780',
+       tension:0.35,order:0,datalabels:{display:false}}
     ]},
     options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>' '+ctx.dataset.label+': '+fmt(ctx.parsed.y),footer:items=>' Total: '+fmt(items.reduce((a,i)=>a+i.parsed.y,0))},footerFont:{weight:'600'}}},
+      layout:{padding:{top:22}},
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{
+          label:ctx=>ctx.dataset.type==='line'?null:' '+ctx.dataset.label+': '+fmt(ctx.parsed.y),
+          footer:items=>' Total: '+fmt(items.filter(i=>i.dataset.type!=='line').reduce((a,i)=>a+i.parsed.y,0))
+        },footerFont:{weight:'600'}}
+      },
       scales:{
         x:{stacked:true,grid:{display:false},ticks:{font:{size:11},maxRotation:45,autoSkip:false}},
         y:{stacked:true,grid:{color:'rgba(0,0,0,0.06)'},ticks:{font:{size:11},callback:v=>fmt(v)}}
