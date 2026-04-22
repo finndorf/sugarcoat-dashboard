@@ -8,6 +8,7 @@ export default async function handler(req, res) {
       client_id: SHOPIFY_CLIENT_ID,
       client_secret: SHOPIFY_CLIENT_SECRET,
       grant_type: 'client_credentials',
+      scope: 'read_analytics',
     }),
   });
 
@@ -15,6 +16,8 @@ export default async function handler(req, res) {
   if (!tokenData.access_token) {
     return res.status(500).json({ error: 'Token fetch failed', detail: tokenData });
   }
+  // Temporary: expose token scope for debugging
+  const tokenScope = tokenData.scope;
 
   const shopifyql = 'FROM sales SHOW net_sales GROUP BY month, sales_channel SINCE 2025-01-01 UNTIL 2026-04-30 ORDER BY month ASC';
 
@@ -35,5 +38,5 @@ export default async function handler(req, res) {
 
   const data = await gqlRes.json();
   res.setHeader('Cache-Control', 's-maxage=3600');
-  res.json(data);
+  res.json({ tokenScope, data });
 }
