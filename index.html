@@ -181,7 +181,7 @@ function buildLegend(id,items){document.getElementById(id).innerHTML=items.map(i
 
 function renderMix(){
   const months=getMonths(),labels=months.map(lbl);
-  buildLegend('leg-mix',[{c:C_IG,label:'Instagram'},{c:C_WEB,label:'Website'},{c:C_IP,label:'In-person'},{c:C_WW,label:'WWAG'},{c:'#888780',label:'Trend'}]);
+  buildLegend('leg-mix',[{c:C_IG,label:'Instagram'},{c:C_WEB,label:'Website'},{c:C_IP,label:'In-person'},{c:C_WW,label:'WWAG'}]);
   if(mixChart) mixChart.destroy();
   const igD=months.map(m=>Math.round(ig(m)));
   const webD=months.map(m=>Math.round(web(m)));
@@ -199,17 +199,14 @@ function renderMix(){
         formatter:(_,ctx)=>fmt(totD[ctx.dataIndex]),
         font:{size:9,weight:'600'},color:'#1a1a18'
       }},
-      {type:'line',label:'Trend',data:totD,borderColor:'#888780',backgroundColor:'transparent',
-       borderWidth:1.5,borderDash:[5,4],pointRadius:3,pointBackgroundColor:'#888780',
-       tension:0.35,order:0,datalabels:{display:false}}
     ]},
     options:{responsive:true,maintainAspectRatio:false,
       layout:{padding:{top:22}},
       plugins:{
         legend:{display:false},
         tooltip:{callbacks:{
-          label:ctx=>ctx.dataset.type==='line'?null:' '+ctx.dataset.label+': '+fmt(ctx.parsed.y),
-          footer:items=>' Total: '+fmt(items.filter(i=>i.dataset.type!=='line').reduce((a,i)=>a+i.parsed.y,0))
+          label:ctx=>' '+ctx.dataset.label+': '+fmt(ctx.parsed.y),
+          footer:items=>' Total: '+fmt(items.reduce((a,i)=>a+i.parsed.y,0))
         },footerFont:{weight:'600'}}
       },
       scales:{
