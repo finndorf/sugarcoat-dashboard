@@ -56,18 +56,42 @@ async function main() {
   console.log(`Loaded ${files.length} Shopify file(s), ${Object.keys(shopify).length} months`);
 
   // --- WWAG ---
+  // Extract existing wwag from index.html as baseline
   let wwag = {};
+  const existingHtml = fs.readFileSync(htmlFile, 'utf8');
+  const wwagMatch = existingHtml.match(/const wwag\s*=\s*(\{[^;]+\})/);
+  if (wwagMatch) {
+    try { wwag = JSON.parse(wwagMatch[1].replace(/'/g,'"').replace(/([0-9]{4}-[0-9]{2}):/g,'"$1":')); } catch {}
+  }
+
+  // Override/merge with data/wwag.json if present
   if (fs.existsSync(wwagFile)) {
-    wwag = JSON.parse(fs.readFileSync(wwagFile, 'utf8'));
-    console.log(`Loaded WWAG data: ${Object.keys(wwag).length} months`);
-  } else {
-    const html = fs.readFileSync(htmlFile, 'utf8');
-    const m = html.match(/const wwag\s*=\s*(\{[^;]+\})/);
-    if (m) {
-      try {
-        wwag = JSON.parse(m[1].replace(/'/g, '"').replace(/([0-9]{4}-[0-9]{2}):/g, '"$1":'));
-        console.log('Using existing wwag from index.html (place data/wwag.json to override)');
-      } catch { console.warn('Could not parse existing wwag — leaving empty'); }
+    const override = JSON.parse(fs.readFileSync(wwagFile, 'utf8'));
+    Object.assign(wwag, override);
+    console.log(`Merged WWAG from wwag.json: ${Object.keys(override).length} months`);
+  }
+
+  // Parse any Mall-Central CSVs in data/wwag/
+  const wwagDir = path.join(root, 'data', 'wwag');
+  if (fs.existsSync(wwagDir)) {
+    const csvFiles = fs.readdirSync(wwagDir).filter(f => f.endsWith('.csv'));
+    for (const f of csvFiles) {
+      const lines = fs.readFileSync(path.join(wwagDir, f), 'utf8').split('\n');
+      for (const line of lines.slice(1)) {
+        const cols = line.split(',').map(c => c.replace(/"/g,'').trim());
+        const date = cols[0];
+        if (!/^\d{2}\/\d{2}\/\d{4}$/.test(date)) continue;
+        const [mo,,yr] = date.split('/');
+        const month = yr + '-' + mo;
+        const amt = parseFloat(cols[8]);
+        if (isNaN(amt)) continue;
+        wwag[month] = (wwag[month] || 0) + amt;
+      }
+    }
+    if (csvFiles.length) {
+      // Round all values after summing
+      for (const m of Object.keys(wwag)) wwag[m] = Math.round(wwag[m]);
+      console.log(`Parsed ${csvFiles.length} WWAG CSV file(s)`);
     }
   }
 

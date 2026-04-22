@@ -1,4 +1,5 @@
 .vercel
 .env*.local
 data/shopify/*.jsonl
+data/wwag/*.csv
 data/wwag.json

@@ -28,7 +28,7 @@ function buildBlock(allMonths, dataIG, dataWeb, dataIP, wwag) {
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
 
-  const { secret, byMonth } = req.body;
+  const { secret, byMonth, wwag: wwagOverride } = req.body;
   if (secret !== process.env.ADMIN_SECRET) return res.status(401).json({ error: 'Invalid password' });
 
   const token = process.env.GITHUB_TOKEN;
@@ -46,6 +46,7 @@ export default async function handler(req, res) {
   if (wwagMatch) {
     try { wwag = JSON.parse(wwagMatch[1].replace(/'/g,'"').replace(/([0-9]{4}-[0-9]{2}):/g,'"$1":')); } catch {}
   }
+  if (wwagOverride) Object.assign(wwag, wwagOverride);
 
   // Build data objects
   const allMonths = [...new Set([...Object.keys(byMonth), ...Object.keys(wwag)])].sort();

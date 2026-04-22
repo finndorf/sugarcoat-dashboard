@@ -41,6 +41,12 @@
     <span style="font-size:11px;margin-top:4px;display:block">Sales by Channel by Month export from Shopify Reports</span></p>
   </div>
 
+  <div class="zone" id="wwagZone" onclick="document.getElementById('wwagFile').click()">
+    <input type="file" id="wwagFile" accept=".csv" multiple>
+    <p class="zone-label"><strong>WWAG CSV</strong> <span style="font-weight:400;color:#999">(optional)</span> — Mall-Central export<br>
+    <span style="font-size:11px;margin-top:4px;display:block">Merges with existing WWAG data in the dashboard</span></p>
+  </div>
+
   <div id="preview" style="display:none">
     <table id="previewTable">
       <thead><tr>
@@ -67,6 +73,37 @@ const IP_CH  = new Set(['Point of Sale','Shopify Mobile for iPhone']);
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
 let processedData = null;
+let wwagData = null;
+
+function parseWWAGCSV(text) {
+  const out = {};
+  const lines = text.split('\n');
+  for (const line of lines.slice(1)) {
+    const cols = line.split(',').map(c => c.replace(/"/g,'').trim());
+    const date = cols[0];
+    if (!/^\d{2}\/\d{2}\/\d{4}$/.test(date)) continue;
+    const [mo,,yr] = date.split('/');
+    const month = yr + '-' + mo;
+    const amt = parseFloat(cols[8]);
+    if (isNaN(amt)) continue;
+    out[month] = (out[month] || 0) + amt;
+  }
+  for (const m of Object.keys(out)) out[m] = Math.round(out[m]);
+  return out;
+}
+
+async function loadWWAG(files) {
+  const merged = {};
+  for (const file of files) {
+    const text = await file.text();
+    const parsed = parseWWAGCSV(text);
+    for (const [m, v] of Object.entries(parsed)) merged[m] = (merged[m] || 0) + v;
+  }
+  wwagData = merged;
+  document.getElementById('wwagZone').classList.add('loaded');
+  document.getElementById('wwagZone').querySelector('.zone-label').innerHTML =
+    `<strong>WWAG CSV</strong> — ${Object.keys(merged).length} months loaded (${Object.keys(merged).sort().join(', ')})`;
+}
 
 function fmt(v) { return v === 0 ? '—' : (v < 0 ? '-$' : '$') + Math.abs(Math.round(v)).toLocaleString(); }
 
@@ -128,7 +165,7 @@ async function commit() {
     const res = await fetch('/api/commit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ secret, byMonth: processedData }),
+      body: JSON.stringify({ secret, byMonth: processedData, wwag: wwagData }),
     });
     const json = await res.json();
     if (!res.ok) throw new Error(json.error || res.statusText);
@@ -146,7 +183,17 @@ function setStatus(msg, cls) {
   el.className = 'status ' + cls;
 }
 
-// Drag & drop
+// WWAG drag & drop
+const wwagZone = document.getElementById('wwagZone');
+wwagZone.addEventListener('dragover', e => { e.preventDefault(); wwagZone.classList.add('over'); });
+wwagZone.addEventListener('dragleave', () => wwagZone.classList.remove('over'));
+wwagZone.addEventListener('drop', e => {
+  e.preventDefault(); wwagZone.classList.remove('over');
+  loadWWAG([...e.dataTransfer.files].filter(f => f.name.endsWith('.csv')));
+});
+document.getElementById('wwagFile').addEventListener('change', e => loadWWAG([...e.target.files]));
+
+// Shopify drag & drop
 const zone = document.getElementById('shopifyZone');
 zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
 zone.addEventListener('dragleave', () => zone.classList.remove('over'));
