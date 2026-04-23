@@ -11,6 +11,86 @@ const IP_CH  = new Set(['Point of Sale', 'Shopify Mobile for iPhone']);
 
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
+const MONTH_NAME = {
+  January:1, February:2, March:3, April:4, May:5, June:6,
+  July:7, August:8, September:9, October:10, November:11, December:12,
+};
+
+// Minimal CSV line parser that handles double-quoted fields
+function parseCSVLine(line) {
+  const cols = [];
+  let cur = '', inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (c === '"') { inQ = !inQ; }
+    else if (c === ',' && !inQ) { cols.push(cur); cur = ''; }
+    else { cur += c; }
+  }
+  cols.push(cur);
+  return cols;
+}
+
+// "June 04, 2025" → "2025-06"
+function parsePalomaDate(str) {
+  const parts = str.trim().split(' ');
+  const m = MONTH_NAME[parts[0]];
+  const yr = parts[2];
+  if (!m || !yr) return null;
+  return `${yr}-${String(m).padStart(2, '0')}`;
+}
+
+function parsePaloma(dir) {
+  const out = {};
+  if (!fs.existsSync(dir)) return out;
+  const files = fs.readdirSync(dir).filter(f => f.endsWith('.csv'));
+  for (const f of files) {
+    const lines = fs.readFileSync(path.join(dir, f), 'utf8').split('\n');
+    const header = parseCSVLine(lines[0].replace(/^﻿/, ''));
+    const orderNumIdx = header.indexOf('Order number');
+    const paidAtIdx   = header.indexOf('Paid at');
+    const netIdx      = header.indexOf('Net');
+    const seen = new Set();
+    for (const line of lines.slice(1)) {
+      if (!line.trim()) continue;
+      const cols = parseCSVLine(line);
+      const orderNum = cols[orderNumIdx];
+      if (!orderNum || seen.has(orderNum)) continue;
+      seen.add(orderNum);
+      const month = parsePalomaDate(cols[paidAtIdx] || '');
+      if (!month) continue;
+      const net = parseFloat(cols[netIdx]);
+      if (!isNaN(net)) out[month] = (out[month] || 0) + net;
+    }
+  }
+  for (const m of Object.keys(out)) out[m] = Math.round(out[m]);
+  if (files.length) console.log(`Loaded ${files.length} Paloma file(s), ${Object.keys(out).length} months`);
+  return out;
+}
+
+function parseSquare(dir) {
+  const out = {};
+  if (!fs.existsSync(dir)) return out;
+  const files = fs.readdirSync(dir).filter(f => f.endsWith('.csv'));
+  for (const f of files) {
+    const lines = fs.readFileSync(path.join(dir, f), 'utf8').split('\n');
+    const header = parseCSVLine(lines[0].replace(/^﻿/, ''));
+    const dateIdx     = header.indexOf('Date');
+    const netSalesIdx = header.indexOf('Net Sales');
+    for (const line of lines.slice(1)) {
+      if (!line.trim()) continue;
+      const cols  = parseCSVLine(line);
+      const date  = cols[dateIdx] || '';
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+      const month = date.slice(0, 7);
+      const net   = parseFloat((cols[netSalesIdx] || '').replace(/[$,]/g, ''));
+      if (!isNaN(net)) out[month] = (out[month] || 0) + net;
+    }
+  }
+  for (const m of Object.keys(out)) out[m] = Math.round(out[m]);
+  if (files.length) console.log(`Loaded ${files.length} Square file(s), ${Object.keys(out).length} months`);
+  return out;
+}
+
 async function parseJSONL(filePath) {
   const out = {};
   const rl = readline.createInterface({ input: fs.createReadStream(filePath), crlfDelay: Infinity });
@@ -38,10 +118,12 @@ async function main() {
   const shopifyDir = path.join(root, 'data', 'shopify');
   const wwagFile   = path.join(root, 'data', 'wwag.json');
   const htmlFile   = path.join(root, 'index.html');
+  const palomaDir  = path.join(root, 'data', 'paloma');
+  const squareDir  = path.join(root, 'data', 'square');
 
   // --- Shopify JSONL ---
   const files = fs.readdirSync(shopifyDir).filter(f => f.endsWith('.jsonl'));
-  if (!files.length) { console.error('No .jsonl files found in data/shopify/'); process.exit(1); }
+  if (!files.length) console.warn('No .jsonl files found in data/shopify/ — skipping Shopify');
 
   const shopify = {};
   for (const f of files) {
@@ -53,7 +135,7 @@ async function main() {
       shopify[m].ip  += v.ip;
     }
   }
-  console.log(`Loaded ${files.length} Shopify file(s), ${Object.keys(shopify).length} months`);
+  if (files.length) console.log(`Loaded ${files.length} Shopify file(s), ${Object.keys(shopify).length} months`);
 
   // --- WWAG ---
   // Extract existing wwag from index.html as baseline
@@ -95,13 +177,22 @@ async function main() {
     }
   }
 
+  // --- Paloma (→ IG) and Square (→ In-person) ---
+  const paloma = parsePaloma(palomaDir);
+  const square = parseSquare(squareDir);
+
   // --- Build month list & data objects ---
-  const allMonths = [...new Set([...Object.keys(shopify), ...Object.keys(wwag)])].sort();
+  const allMonths = [...new Set([
+    ...Object.keys(shopify), ...Object.keys(wwag),
+    ...Object.keys(paloma),  ...Object.keys(square),
+  ])].sort();
   const dataIG = {}, dataWeb = {}, dataIP = {};
   for (const m of allMonths) {
-    if (shopify[m]?.ig)  dataIG[m]  = shopify[m].ig;
+    const ig = (shopify[m]?.ig || 0) + (paloma[m] || 0);
+    if (ig)              dataIG[m]  = ig;
     if (shopify[m]?.web) dataWeb[m] = shopify[m].web;
-    if (shopify[m]?.ip)  dataIP[m]  = shopify[m].ip;
+    const ip = (shopify[m]?.ip || 0) + (square[m] || 0);
+    if (ip)              dataIP[m]  = ip;
   }
 
   // --- Write data block ---
