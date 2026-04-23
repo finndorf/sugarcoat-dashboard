@@ -39,7 +39,7 @@
   </div>
 
   <div class="zone" id="shopifyZone" onclick="document.getElementById('shopifyFile').click()">
-    <input type="file" id="shopifyFile" accept=".jsonl" multiple>
+    <input type="file" id="shopifyFile" accept=".jsonl,.json" multiple>
     <p class="zone-label"><strong>Shopify JSONL</strong> — drop file(s) here or click to browse<br>
     <span style="font-size:11px;margin-top:4px;display:block">Sales by Channel by Month export from Shopify Reports</span></p>
   </div>
@@ -49,6 +49,8 @@
     <p class="zone-label"><strong>WWAG CSV</strong> <span style="font-weight:400;color:#999">(optional)</span> — Mall-Central export<br>
     <span style="font-size:11px;margin-top:4px;display:block">Merges with existing WWAG data in the dashboard</span></p>
   </div>
+
+  <p class="status" id="status" style="margin-bottom:12px"></p>
 
   <div id="preview" style="display:none">
     <table id="previewTable">
@@ -65,7 +67,6 @@
       <input type="password" id="secret" placeholder="Admin password" autofocus>
       <button id="commitBtn" onclick="commit()">Commit &amp; Deploy</button>
     </div>
-    <p class="status" id="status"></p>
   </div>
 </div>
 
@@ -112,30 +113,65 @@ function fmt(v) { return v === 0 ? '—' : (v < 0 ? '-$' : '$') + Math.abs(Math.
 
 function parseJSONL(text) {
   const out = {};
+  const unknownChannels = new Set();
+  let parsed = 0, failed = 0;
   for (const line of text.split('\n')) {
     if (!line.trim()) continue;
-    const { month, sales_channel, net_sales } = JSON.parse(line);
+    let row;
+    try { row = JSON.parse(line); } catch { failed++; continue; }
+    parsed++;
+    const { month, sales_channel, net_sales } = row;
+    if (!month || !sales_channel) continue;
     const m = month.slice(0, 7);
     if (!out[m]) out[m] = { ig: 0, web: 0, ip: 0 };
-    const amt = Math.round(net_sales);
+    const amt = Math.round(net_sales || 0);
     if (IG_CH.has(sales_channel))       out[m].ig  += amt;
     else if (WEB_CH.has(sales_channel)) out[m].web += amt;
     else if (IP_CH.has(sales_channel))  out[m].ip  += amt;
+    else unknownChannels.add(sales_channel);
   }
-  return out;
+  return { out, parsed, failed, unknownChannels };
 }
 
 async function loadFiles(files) {
+  if (!files.length) {
+    setStatus('No .jsonl or .json files found — check the file extension.', 'err');
+    document.getElementById('preview').style.display = 'none';
+    return;
+  }
   const merged = {};
-  for (const file of files) {
-    const text = await file.text();
-    const parsed = parseJSONL(text);
-    for (const [m, v] of Object.entries(parsed)) {
-      if (!merged[m]) merged[m] = { ig: 0, web: 0, ip: 0 };
-      merged[m].ig  += v.ig;
-      merged[m].web += v.web;
-      merged[m].ip  += v.ip;
+  let totalParsed = 0, totalFailed = 0;
+  const allUnknown = new Set();
+  try {
+    for (const file of files) {
+      const text = await file.text();
+      const { out, parsed, failed, unknownChannels } = parseJSONL(text);
+      totalParsed += parsed; totalFailed += failed;
+      unknownChannels.forEach(c => allUnknown.add(c));
+      for (const [m, v] of Object.entries(out)) {
+        if (!merged[m]) merged[m] = { ig: 0, web: 0, ip: 0 };
+        merged[m].ig  += v.ig;
+        merged[m].web += v.web;
+        merged[m].ip  += v.ip;
+      }
     }
+  } catch (e) {
+    setStatus('Error reading file: ' + e.message, 'err');
+    return;
+  }
+  if (totalParsed === 0) {
+    setStatus(`Could not parse any lines (${totalFailed} failed). Is this a Shopify JSONL export?`, 'err');
+    return;
+  }
+  if (!Object.keys(merged).length) {
+    const hint = allUnknown.size ? ` Unknown channels: ${[...allUnknown].join(', ')}` : '';
+    setStatus(`File parsed (${totalParsed} rows) but no matching sales channels found.${hint}`, 'err');
+    return;
+  }
+  if (allUnknown.size) {
+    setStatus(`Note: unrecognised channels ignored: ${[...allUnknown].join(', ')}`, '');
+  } else {
+    setStatus('', '');
   }
   processedData = merged;
   renderPreview(merged);
@@ -205,7 +241,7 @@ zone.addEventListener('drop', e => {
   e.preventDefault();
   zone.classList.remove('over');
   zone.classList.add('loaded');
-  loadFiles([...e.dataTransfer.files].filter(f => f.name.endsWith('.jsonl')));
+  loadFiles([...e.dataTransfer.files].filter(f => f.name.endsWith('.jsonl') || f.name.endsWith('.json')));
 });
 document.getElementById('shopifyFile').addEventListener('change', e => {
   zone.classList.add('loaded');
