@@ -114,12 +114,13 @@ function fmt(v) { return v === 0 ? '—' : (v < 0 ? '-$' : '$') + Math.abs(Math.
 function parseJSONL(text) {
   const out = {};
   const unknownChannels = new Set();
-  let parsed = 0, failed = 0;
+  let parsed = 0, failed = 0, firstRow = null;
   for (const line of text.split('\n')) {
     if (!line.trim()) continue;
     let row;
     try { row = JSON.parse(line); } catch { failed++; continue; }
     parsed++;
+    if (!firstRow) firstRow = row;
     const { month, sales_channel, net_sales } = row;
     if (!month || !sales_channel) continue;
     const m = month.slice(0, 7);
@@ -130,7 +131,7 @@ function parseJSONL(text) {
     else if (IP_CH.has(sales_channel))  out[m].ip  += amt;
     else unknownChannels.add(sales_channel);
   }
-  return { out, parsed, failed, unknownChannels };
+  return { out, parsed, failed, unknownChannels, firstRow };
 }
 
 async function loadFiles(files) {
@@ -140,13 +141,14 @@ async function loadFiles(files) {
     return;
   }
   const merged = {};
-  let totalParsed = 0, totalFailed = 0;
+  let totalParsed = 0, totalFailed = 0, sampleRow = null;
   const allUnknown = new Set();
   try {
     for (const file of files) {
       const text = await file.text();
-      const { out, parsed, failed, unknownChannels } = parseJSONL(text);
+      const { out, parsed, failed, unknownChannels, firstRow } = parseJSONL(text);
       totalParsed += parsed; totalFailed += failed;
+      if (!sampleRow && firstRow) sampleRow = firstRow;
       unknownChannels.forEach(c => allUnknown.add(c));
       for (const [m, v] of Object.entries(out)) {
         if (!merged[m]) merged[m] = { ig: 0, web: 0, ip: 0 };
@@ -164,7 +166,8 @@ async function loadFiles(files) {
     return;
   }
   if (!Object.keys(merged).length) {
-    const hint = allUnknown.size ? ` Unknown channels: ${[...allUnknown].join(', ')}` : '';
+    let hint = allUnknown.size ? ` Unknown channels: ${[...allUnknown].join(', ')}.` : '';
+    if (!hint && sampleRow) hint = ` First row fields: ${JSON.stringify(sampleRow)}`;
     setStatus(`File parsed (${totalParsed} rows) but no matching sales channels found.${hint}`, 'err');
     return;
   }
