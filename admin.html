@@ -62,7 +62,7 @@
       <tbody id="previewBody"></tbody>
     </table>
     <div class="footer">
-      <input type="password" id="secret" placeholder="Admin password">
+      <input type="password" id="secret" placeholder="Admin password" autofocus>
       <button id="commitBtn" onclick="commit()">Commit &amp; Deploy</button>
     </div>
     <p class="status" id="status"></p>
@@ -139,6 +139,7 @@ async function loadFiles(files) {
   }
   processedData = merged;
   renderPreview(merged);
+  document.getElementById('preview').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function renderPreview(data) {
