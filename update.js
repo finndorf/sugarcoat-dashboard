@@ -16,8 +16,8 @@ async function parseJSONL(filePath) {
   const rl = readline.createInterface({ input: fs.createReadStream(filePath), crlfDelay: Infinity });
   for await (const line of rl) {
     if (!line.trim()) continue;
-    const { month, sales_channel, net_sales } = JSON.parse(line);
-    const m = month.slice(0, 7);
+    const { month, hour, sales_channel, net_sales } = JSON.parse(line);
+    const m = (month || hour).slice(0, 7);
     if (!out[m]) out[m] = { ig: 0, web: 0, ip: 0 };
     const amt = Math.round(net_sales);
     if (IG_CH.has(sales_channel))       out[m].ig  += amt;
