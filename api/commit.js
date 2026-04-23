@@ -40,22 +40,27 @@ export default async function handler(req, res) {
   const { content: b64, sha } = await getRes.json();
   const html = Buffer.from(b64, 'base64').toString('utf8');
 
-  // Extract existing wwag
-  let wwag = {};
-  const wwagMatch = html.match(/const wwag\s*=\s*(\{[^;]+\})/);
-  if (wwagMatch) {
-    try { wwag = JSON.parse(wwagMatch[1].replace(/'/g,'"').replace(/([0-9]{4}-[0-9]{2}):/g,'"$1":')); } catch {}
+  function extractObj(varName) {
+    const m = html.match(new RegExp(`const ${varName}\\s*=\\s*(\\{[^;]*\\})`));
+    if (!m) return {};
+    try { return JSON.parse(m[1].replace(/'/g,'"').replace(/([0-9]{4}-[0-9]{2}):/g,'"$1":')); } catch { return {}; }
   }
+
+  // Extract existing wwag
+  let wwag = extractObj('wwag');
   if (wwagOverride) Object.assign(wwag, wwagOverride);
 
-  // Build data objects
-  const allMonths = [...new Set([...Object.keys(byMonth), ...Object.keys(wwag)])].sort();
-  const dataIG = {}, dataWeb = {}, dataIP = {};
-  for (const m of allMonths) {
-    if (byMonth[m]?.ig)  dataIG[m]  = byMonth[m].ig;
-    if (byMonth[m]?.web) dataWeb[m] = byMonth[m].web;
-    if (byMonth[m]?.ip)  dataIP[m]  = byMonth[m].ip;
+  // Merge new Shopify data on top of existing — months not in the upload are preserved
+  const dataIG  = extractObj('dataIG');
+  const dataWeb = extractObj('dataWeb');
+  const dataIP  = extractObj('dataIP');
+  for (const m of Object.keys(byMonth || {})) {
+    if (byMonth[m].ig)  dataIG[m]  = byMonth[m].ig;  else delete dataIG[m];
+    if (byMonth[m].web) dataWeb[m] = byMonth[m].web; else delete dataWeb[m];
+    if (byMonth[m].ip)  dataIP[m]  = byMonth[m].ip;  else delete dataIP[m];
   }
+
+  const allMonths = [...new Set([...Object.keys(dataIG), ...Object.keys(dataWeb), ...Object.keys(dataIP), ...Object.keys(wwag)])].sort();
 
   const { block, range } = buildBlock(allMonths, dataIG, dataWeb, dataIP, wwag);
 

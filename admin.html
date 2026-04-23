@@ -107,6 +107,12 @@ async function loadWWAG(files) {
   document.getElementById('wwagZone').classList.add('loaded');
   document.getElementById('wwagZone').querySelector('.zone-label').innerHTML =
     `<strong>WWAG CSV</strong> — ${Object.keys(merged).length} months loaded (${Object.keys(merged).sort().join(', ')})`;
+  if (!processedData) {
+    document.getElementById('previewBody').innerHTML =
+      '<tr><td colspan="5" style="text-align:center;color:#888;padding:16px">No Shopify file — existing dashboard data will be preserved</td></tr>';
+    document.getElementById('preview').style.display = '';
+    document.getElementById('preview').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 function fmt(v) { return v === 0 ? '—' : (v < 0 ? '-$' : '$') + Math.abs(Math.round(v)).toLocaleString(); }
@@ -200,7 +206,7 @@ function renderPreview(data) {
 async function commit() {
   const secret = document.getElementById('secret').value;
   if (!secret) { setStatus('Enter admin password', 'err'); return; }
-  if (!processedData) { setStatus('No data loaded', 'err'); return; }
+  if (!processedData && !wwagData) { setStatus('No data loaded', 'err'); return; }
 
   document.getElementById('commitBtn').disabled = true;
   setStatus('Committing…', '');
