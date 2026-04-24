@@ -91,6 +91,33 @@ function parseSquare(dir) {
   return out;
 }
 
+function parseQuickBooks(dir) {
+  const out = {};
+  if (!fs.existsSync(dir)) return out;
+  const files = fs.readdirSync(dir).filter(f => f.endsWith('.csv'));
+  for (const f of files) {
+    const lines = fs.readFileSync(path.join(dir, f), 'utf8').split('\n');
+    const headerIdx = lines.findIndex(l => l.includes('Transaction date'));
+    if (headerIdx === -1) continue;
+    const header = parseCSVLine(lines[headerIdx]);
+    const dateIdx = header.indexOf('Transaction date');
+    const amtIdx  = header.indexOf('Amount');
+    for (const line of lines.slice(headerIdx + 1)) {
+      if (!line.trim()) continue;
+      const cols = parseCSVLine(line);
+      const date = (cols[dateIdx] || '').trim();
+      if (!/^\d{2}\/\d{2}\/\d{4}$/.test(date)) continue;
+      const [mo, , yr] = date.split('/');
+      const month = `${yr}-${mo}`;
+      const amt = parseFloat((cols[amtIdx] || '').replace(/[$,]/g, ''));
+      if (!isNaN(amt)) out[month] = (out[month] || 0) + amt;
+    }
+  }
+  for (const m of Object.keys(out)) out[m] = Math.round(out[m]);
+  if (files.length) console.log(`Loaded ${files.length} QuickBooks file(s), ${Object.keys(out).length} months`);
+  return out;
+}
+
 async function parseJSONL(filePath) {
   const out = {};
   const rl = readline.createInterface({ input: fs.createReadStream(filePath), crlfDelay: Infinity });
@@ -120,6 +147,7 @@ async function main() {
   const htmlFile   = path.join(root, 'index.html');
   const palomaDir  = path.join(root, 'data', 'paloma');
   const squareDir  = path.join(root, 'data', 'square');
+  const qbDir      = path.join(root, 'data', 'quickbooks');
 
   // --- Shopify JSONL ---
   const files = fs.readdirSync(shopifyDir).filter(f => f.endsWith('.jsonl'));
@@ -177,21 +205,22 @@ async function main() {
     }
   }
 
-  // --- Paloma (→ IG) and Square (→ In-person) ---
+  // --- Paloma (→ IG), Square (→ IP), QuickBooks (→ IP) ---
   const paloma = parsePaloma(palomaDir);
   const square = parseSquare(squareDir);
+  const qb     = parseQuickBooks(qbDir);
 
   // --- Build month list & data objects ---
   const allMonths = [...new Set([
     ...Object.keys(shopify), ...Object.keys(wwag),
-    ...Object.keys(paloma),  ...Object.keys(square),
+    ...Object.keys(paloma),  ...Object.keys(square), ...Object.keys(qb),
   ])].sort();
   const dataIG = {}, dataWeb = {}, dataIP = {};
   for (const m of allMonths) {
     const ig = (shopify[m]?.ig || 0) + (paloma[m] || 0);
     if (ig)              dataIG[m]  = ig;
     if (shopify[m]?.web) dataWeb[m] = shopify[m].web;
-    const ip = (shopify[m]?.ip || 0) + (square[m] || 0);
+    const ip = (shopify[m]?.ip || 0) + (square[m] || 0) + (qb[m] || 0);
     if (ip)              dataIP[m]  = ip;
   }
 

@@ -1,0 +1,836 @@
+Transaction Detail by Account,,,,,,,,,
+Sugarcoat Home,,,,,,,,,
+"January 1, 2025-April 24, 2026",,,,,,,,,
+
+,Transaction date,Transaction type,Num,Name,Store full name,Description,Split,Amount,Balance
+Sales of Product Income,,,,,,,,,
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),120.00,120.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),125.00,245.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,highball set/5,Accounts Receivable (A/R),60.00,305.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,double old fashioned set/4,Accounts Receivable (A/R),95.00,400.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,rocks set/4,Accounts Receivable (A/R),90.00,490.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),400.00,890.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),65.00,955.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,"cup, soap dish, tissue holder",Accounts Receivable (A/R),50.00,"1,005.00"
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),30.00,"1,035.00"
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),80.00,"1,115.00"
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),650.00,"1,765.00"
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),350.00,"2,115.00"
+Total for Sales of Product Income,,,,,,,,"$2,115.00",
+Services,,,,,,,,,
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),125.00,125.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),70.95,195.95
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),125.00,320.95
+,01/21/2025,Invoice,1096,Susan Barrett,,Client owned wardrobe,Accounts Receivable (A/R),"2,000.00","2,320.95"
+Total for Services,,,,,,,,"$2,320.95",
+Missouri Department of Revenue Payable,,,,,,,,,
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),0.00,0.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),0.00,0.00
+,01/12/2025,Invoice,1080,Eurotrash Annie,,,Accounts Receivable (A/R),0.00,0.00
+,01/21/2025,Invoice,1096,Susan Barrett,,,Accounts Receivable (A/R),0.00,0.00
+,01/21/2025,Invoice,1096,Susan Barrett,,,Accounts Receivable (A/R),0.00,0.00
+,01/21/2025,Invoice,1096,Susan Barrett,,,Accounts Receivable (A/R),0.00,0.00
+,03/08/2025,Invoice,1102,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,03/08/2025,Invoice,1102,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,03/08/2025,Invoice,1102,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/10/2025,Invoice,1119,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/10/2025,Invoice,1119,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/10/2025,Invoice,1119,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/10/2025,Invoice,1120,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.01,1.01
+,04/10/2025,Invoice,1120,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.00,2.01
+,04/10/2025,Invoice,1120,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.69,3.70
+,04/10/2025,Invoice,1127,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/10/2025,Invoice,1127,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/10/2025,Invoice,1127,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/11/2025,Invoice,1129,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/11/2025,Invoice,1129,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/11/2025,Invoice,1129,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/14/2025,Invoice,1139,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/14/2025,Invoice,1139,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/14/2025,Invoice,1139,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1142,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1142,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1142,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1144,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1144,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1144,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1143,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1143,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/15/2025,Invoice,1143,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/16/2025,Invoice,1146,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/16/2025,Invoice,1146,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/16/2025,Invoice,1146,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/17/2025,Invoice,1149,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/17/2025,Invoice,1149,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/17/2025,Invoice,1149,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/18/2025,Invoice,1157,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/18/2025,Invoice,1157,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/18/2025,Invoice,1157,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/18/2025,Invoice,1158,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/18/2025,Invoice,1158,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/18/2025,Invoice,1158,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/22/2025,Invoice,1162,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/22/2025,Invoice,1162,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/22/2025,Invoice,1162,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/21/2025,Invoice,1163,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/21/2025,Invoice,1163,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/21/2025,Invoice,1163,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/25/2025,Invoice,1175,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/25/2025,Invoice,1175,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/25/2025,Invoice,1175,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,3.70
+,04/27/2025,Invoice,1176,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.64,6.34
+,04/27/2025,Invoice,1176,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.64,8.98
+,04/27/2025,Invoice,1176,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.43,13.41
+,04/27/2025,Invoice,1176,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,13.41
+,04/30/2025,Invoice,1177,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,13.41
+,04/30/2025,Invoice,1177,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,13.41
+,04/30/2025,Invoice,1177,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,13.41
+,04/30/2025,Invoice,1180,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.75,14.16
+,04/30/2025,Invoice,1180,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.76,14.92
+,04/30/2025,Invoice,1180,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.27,16.19
+,04/30/2025,Invoice,1185,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.01,18.20
+,04/30/2025,Invoice,1185,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,18.20
+,04/30/2025,Invoice,1185,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.00,20.20
+,04/30/2025,Invoice,1185,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.39,23.59
+,04/30/2025,Invoice,1191,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,23.59
+,04/30/2025,Invoice,1191,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,23.59
+,04/30/2025,Invoice,1191,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,23.59
+,05/02/2025,Invoice,1193,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,23.59
+,05/02/2025,Invoice,1193,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,23.59
+,05/02/2025,Invoice,1193,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,23.59
+,05/08/2025,Invoice,1199,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.91,28.50
+,05/08/2025,Invoice,1199,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,28.50
+,05/08/2025,Invoice,1199,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.88,33.38
+,05/08/2025,Invoice,1199,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.24,41.62
+,05/09/2025,Invoice,1203,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.89,43.51
+,05/09/2025,Invoice,1203,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,43.51
+,05/09/2025,Invoice,1203,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.88,45.39
+,05/09/2025,Invoice,1203,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.17,48.56
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,48.56
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.85,54.41
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,54.41
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.80,60.21
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),9.80,70.01
+,05/09/2025,Invoice,1206,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,70.01
+,05/09/2025,Invoice,1206,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,70.01
+,05/09/2025,Invoice,1206,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,70.01
+,05/09/2025,Invoice,1207,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.15,75.16
+,05/09/2025,Invoice,1207,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,75.16
+,05/09/2025,Invoice,1207,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.14,80.30
+,05/09/2025,Invoice,1207,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.66,88.96
+,05/20/2025,Invoice,1214,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,88.96
+,05/20/2025,Invoice,1214,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,88.96
+,05/20/2025,Invoice,1214,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,88.96
+,06/06/2025,Invoice,1267,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,88.96
+,06/06/2025,Invoice,1267,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,88.96
+,06/06/2025,Invoice,1267,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,88.96
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.43,95.39
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,95.39
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.38,101.77
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),10.78,112.55
+,08/28/2025,Invoice,1299,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),16.62,129.17
+,08/28/2025,Invoice,1299,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),9.88,139.05
+,08/28/2025,Invoice,1299,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.84,147.89
+,10/02/2025,Invoice,1311,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.89,150.78
+,10/02/2025,Invoice,1311,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.90,153.68
+,10/02/2025,Invoice,1311,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,153.68
+,10/02/2025,Invoice,1311,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.86,158.54
+,10/08/2025,Invoice,1313,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),80.34,238.88
+,10/08/2025,Invoice,1313,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),47.78,286.66
+,10/08/2025,Invoice,1313,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),42.79,329.45
+,08/23/2025,Invoice,1297,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.83,332.28
+,08/23/2025,Invoice,1297,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.69,333.97
+,08/23/2025,Invoice,1297,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.51,335.48
+,11/21/2025,Invoice,1320,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),34.74,370.22
+,11/21/2025,Invoice,1320,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),20.66,390.88
+,11/21/2025,Invoice,1320,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),18.50,409.38
+,12/08/2025,Invoice,1329,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),74.13,483.51
+,12/08/2025,Invoice,1329,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),73.76,557.27
+,12/08/2025,Invoice,1329,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),124.64,681.91
+,12/16/2025,Invoice,1334,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.17,685.08
+,12/16/2025,Invoice,1334,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.88,686.96
+,12/16/2025,Invoice,1334,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.89,688.85
+,01/05/2026,Invoice,1338,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),11.12,699.97
+,01/05/2026,Invoice,1338,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.61,706.58
+,01/05/2026,Invoice,1338,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.92,712.50
+,02/11/2026,Invoice,1356,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.88,714.38
+,02/11/2026,Invoice,1356,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.89,716.27
+,02/11/2026,Invoice,1356,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.17,719.44
+,02/12/2026,Invoice,1364,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.51,720.95
+,02/12/2026,Invoice,1364,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.50,722.45
+,02/12/2026,Invoice,1364,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.55,725.00
+,02/12/2026,Invoice,1365,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.77,727.77
+,02/12/2026,Invoice,1365,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.76,730.53
+,02/12/2026,Invoice,1365,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.65,735.18
+,02/12/2026,Invoice,1369,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.27,738.45
+,02/12/2026,Invoice,1369,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.25,741.70
+,02/12/2026,Invoice,1369,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.49,747.19
+,02/12/2026,Invoice,1370,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.13,748.32
+,02/12/2026,Invoice,1370,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.13,749.45
+,02/12/2026,Invoice,1370,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.90,751.35
+,02/12/2026,Invoice,1371,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.51,752.86
+,02/12/2026,Invoice,1371,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,752.86
+,02/12/2026,Invoice,1371,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.51,754.37
+,02/12/2026,Invoice,1371,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,754.37
+,02/12/2026,Invoice,1371,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,754.37
+,02/12/2026,Invoice,1371,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.53,756.90
+,02/12/2026,Invoice,1373,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.75,757.65
+,02/12/2026,Invoice,1373,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.76,758.41
+,02/12/2026,Invoice,1373,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.27,759.68
+,02/12/2026,Invoice,1380,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.50,760.18
+,02/12/2026,Invoice,1380,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.50,760.68
+,02/12/2026,Invoice,1380,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.85,761.53
+,02/14/2026,Invoice,1389,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.60,762.13
+,02/14/2026,Invoice,1389,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.59,762.72
+,02/14/2026,Invoice,1389,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.02,763.74
+,02/26/2026,Invoice,1397,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.54,771.28
+,02/26/2026,Invoice,1397,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.51,778.79
+,02/26/2026,Invoice,1397,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),12.67,791.46
+,03/06/2026,Invoice,1407,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.88,793.34
+,03/06/2026,Invoice,1407,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.89,795.23
+,03/06/2026,Invoice,1407,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.17,798.40
+,03/06/2026,Invoice,1412,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.75,799.15
+,03/06/2026,Invoice,1412,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,799.15
+,03/06/2026,Invoice,1412,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,799.15
+,03/06/2026,Invoice,1412,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.75,799.90
+,03/06/2026,Invoice,1412,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.28,801.18
+,03/07/2026,Invoice,1428,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.77,804.95
+,03/07/2026,Invoice,1428,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.75,808.70
+,03/07/2026,Invoice,1428,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.34,815.04
+,03/12/2026,Invoice,1440,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.54,822.58
+,03/12/2026,Invoice,1440,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.51,830.09
+,03/12/2026,Invoice,1440,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),12.67,842.76
+,03/16/2026,Invoice,1459,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.26,844.02
+,03/16/2026,Invoice,1459,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.25,845.27
+,03/16/2026,Invoice,1459,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.11,847.38
+,03/20/2026,Invoice,1486,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.14,848.52
+,03/20/2026,Invoice,1486,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,848.52
+,03/20/2026,Invoice,1486,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.13,849.65
+,03/20/2026,Invoice,1486,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.90,851.55
+,03/24/2026,Invoice,1496,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.39,853.94
+,03/24/2026,Invoice,1496,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,853.94
+,03/24/2026,Invoice,1496,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.37,856.31
+,03/24/2026,Invoice,1496,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.02,860.33
+,03/31/2026,Invoice,1498,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.26,862.59
+,03/31/2026,Invoice,1498,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.27,864.86
+,03/31/2026,Invoice,1498,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.79,868.65
+,03/31/2026,Invoice,1499,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.01,870.66
+,03/31/2026,Invoice,1499,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,870.66
+,03/31/2026,Invoice,1499,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.01,872.67
+,03/31/2026,Invoice,1499,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.38,876.05
+,03/31/2026,Invoice,1500,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.52,880.57
+,03/31/2026,Invoice,1500,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.52,885.09
+,03/31/2026,Invoice,1500,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.60,892.69
+,03/31/2026,Invoice,1501,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.76,896.45
+,03/31/2026,Invoice,1501,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,896.45
+,03/31/2026,Invoice,1501,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.77,900.22
+,03/31/2026,Invoice,1501,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.34,906.56
+,04/01/2026,Invoice,1504,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.90,911.46
+,04/01/2026,Invoice,1504,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.89,916.35
+,04/01/2026,Invoice,1504,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.24,924.59
+,04/01/2026,Invoice,1505,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.01,926.60
+,04/01/2026,Invoice,1505,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,926.60
+,04/01/2026,Invoice,1505,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.01,928.61
+,04/01/2026,Invoice,1505,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.38,931.99
+,04/01/2026,Invoice,1507,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.63,933.62
+,04/01/2026,Invoice,1507,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.64,935.26
+,04/01/2026,Invoice,1507,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.74,938.00
+,04/01/2026,Invoice,1508,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.63,939.63
+,04/01/2026,Invoice,1508,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,939.63
+,04/01/2026,Invoice,1508,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.64,941.27
+,04/01/2026,Invoice,1508,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.74,944.01
+,04/02/2026,Invoice,1510,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.63,945.64
+,04/02/2026,Invoice,1510,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.64,947.28
+,04/02/2026,Invoice,1510,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.74,950.02
+,04/02/2026,Invoice,1512,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.63,951.65
+,04/02/2026,Invoice,1512,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.64,953.29
+,04/02/2026,Invoice,1512,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.74,956.03
+,04/04/2026,Invoice,1515,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.64,958.67
+,04/04/2026,Invoice,1515,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,958.67
+,04/04/2026,Invoice,1515,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.64,961.31
+,04/04/2026,Invoice,1515,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.43,965.74
+,04/04/2026,Invoice,1516,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.77,969.51
+,04/04/2026,Invoice,1516,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.75,973.26
+,04/04/2026,Invoice,1516,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.34,979.60
+,04/04/2026,Invoice,1517,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.88,981.48
+,04/04/2026,Invoice,1517,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.89,983.37
+,04/04/2026,Invoice,1517,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.17,986.54
+,04/05/2026,Invoice,1520,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.02,989.56
+,04/05/2026,Invoice,1520,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.00,992.56
+,04/05/2026,Invoice,1520,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.07,997.63
+,04/05/2026,Invoice,1541,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.63,999.26
+,04/05/2026,Invoice,1541,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.64,"1,000.90"
+,04/05/2026,Invoice,1541,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.74,"1,003.64"
+,04/06/2026,Invoice,1544,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.55,"1,012.19"
+,04/06/2026,Invoice,1544,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.51,"1,020.70"
+,04/06/2026,Invoice,1544,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),14.35,"1,035.05"
+,04/08/2026,Invoice,1553,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.88,"1,035.93"
+,04/08/2026,Invoice,1553,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.89,"1,036.82"
+,04/08/2026,Invoice,1553,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.47,"1,038.29"
+,04/10/2026,Invoice,1559,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.51,"1,040.80"
+,04/10/2026,Invoice,1559,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.51,"1,043.31"
+,04/10/2026,Invoice,1559,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.22,"1,047.53"
+,04/10/2026,Invoice,1560,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.75,"1,048.28"
+,04/10/2026,Invoice,1560,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.76,"1,049.04"
+,04/10/2026,Invoice,1560,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.27,"1,050.31"
+,04/10/2026,Invoice,1566,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),11.31,"1,061.62"
+,04/10/2026,Invoice,1566,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),11.25,"1,072.87"
+,04/10/2026,Invoice,1566,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),19.01,"1,091.88"
+,04/11/2026,Invoice,1573,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.52,"1,095.40"
+,04/11/2026,Invoice,1573,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.51,"1,098.91"
+,04/11/2026,Invoice,1573,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.91,"1,104.82"
+,04/15/2026,Invoice,1585,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.77,"1,108.59"
+,04/15/2026,Invoice,1585,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.75,"1,112.34"
+,04/15/2026,Invoice,1585,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.34,"1,118.68"
+,04/18/2026,Invoice,1591,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),38.96,"1,157.64"
+,04/18/2026,Invoice,1591,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),38.75,"1,196.39"
+,04/18/2026,Invoice,1591,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,"1,196.39"
+,04/18/2026,Invoice,1591,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),65.49,"1,261.88"
+,04/18/2026,Invoice,1596,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.65,"1,266.53"
+,04/18/2026,Invoice,1596,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.63,"1,271.16"
+,04/18/2026,Invoice,1596,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.81,"1,278.97"
+,04/18/2026,Invoice,1599,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.03,"1,284.00"
+,04/18/2026,Invoice,1599,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.00,"1,289.00"
+,04/18/2026,Invoice,1599,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.45,"1,297.45"
+,04/18/2026,Invoice,1601,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.28,"1,303.73"
+,04/18/2026,Invoice,1601,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.25,"1,309.98"
+,04/18/2026,Invoice,1601,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),10.57,"1,320.55"
+,04/18/2026,Invoice,1602,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.01,"1,321.56"
+,04/18/2026,Invoice,1602,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.00,"1,322.56"
+,04/18/2026,Invoice,1602,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.69,"1,324.25"
+,04/18/2026,Invoice,1604,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.88,"1,326.13"
+,04/18/2026,Invoice,1604,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.89,"1,328.02"
+,04/18/2026,Invoice,1604,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.17,"1,331.19"
+,04/18/2026,Invoice,1605,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.66,"1,337.85"
+,04/18/2026,Invoice,1605,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.63,"1,344.48"
+,04/18/2026,Invoice,1605,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),11.21,"1,355.69"
+,04/18/2026,Invoice,1607,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.50,"1,356.19"
+,04/18/2026,Invoice,1607,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.50,"1,356.69"
+,04/18/2026,Invoice,1607,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.85,"1,357.54"
+,04/18/2026,Invoice,1615,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.79,"1,365.33"
+,04/18/2026,Invoice,1615,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.77,"1,373.10"
+,04/18/2026,Invoice,1615,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),13.09,"1,386.19"
+,04/18/2026,Invoice,1616,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),12.57,"1,398.76"
+,04/18/2026,Invoice,1616,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),12.51,"1,411.27"
+,04/18/2026,Invoice,1616,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),21.12,"1,432.39"
+,04/18/2026,Invoice,1617,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.28,"1,440.67"
+,04/18/2026,Invoice,1617,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.23,"1,448.90"
+,04/18/2026,Invoice,1617,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),13.90,"1,462.80"
+,04/18/2026,Invoice,1618,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.36,"1,467.16"
+,04/18/2026,Invoice,1618,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.34,"1,471.50"
+,04/18/2026,Invoice,1618,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.29,"1,478.79"
+,04/18/2026,Invoice,1623,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.26,"1,480.05"
+,04/18/2026,Invoice,1623,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.25,"1,481.30"
+,04/18/2026,Invoice,1623,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.11,"1,483.41"
+,04/18/2026,Invoice,1624,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.26,"1,484.67"
+,04/18/2026,Invoice,1624,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.25,"1,485.92"
+,04/18/2026,Invoice,1624,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.11,"1,488.03"
+,04/18/2026,Invoice,1627,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.65,"1,491.68"
+,04/18/2026,Invoice,1627,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.64,"1,495.32"
+,04/18/2026,Invoice,1627,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.12,"1,501.44"
+,04/18/2026,Invoice,1628,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.61,"1,504.05"
+,04/18/2026,Invoice,1628,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.62,"1,506.67"
+,04/18/2026,Invoice,1628,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.39,"1,511.06"
+,04/18/2026,Invoice,1629,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.54,"1,517.60"
+,04/18/2026,Invoice,1629,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.51,"1,524.11"
+,04/18/2026,Invoice,1629,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),10.97,"1,535.08"
+,04/18/2026,Invoice,1631,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.15,"1,537.23"
+,04/18/2026,Invoice,1631,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.14,"1,539.37"
+,04/18/2026,Invoice,1631,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.58,"1,542.95"
+,04/18/2026,Invoice,1632,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.01,"1,543.96"
+,04/18/2026,Invoice,1632,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.00,"1,544.96"
+,04/18/2026,Invoice,1632,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.69,"1,546.65"
+,04/18/2026,Invoice,1634,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.91,"1,552.56"
+,04/18/2026,Invoice,1634,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.89,"1,558.45"
+,04/18/2026,Invoice,1634,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),9.92,"1,568.37"
+,04/18/2026,Invoice,1635,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.13,"1,569.50"
+,04/18/2026,Invoice,1635,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.14,"1,570.64"
+,04/18/2026,Invoice,1635,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.90,"1,572.54"
+,04/18/2026,Invoice,1639,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.13,"1,573.67"
+,04/18/2026,Invoice,1639,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.13,"1,574.80"
+,04/18/2026,Invoice,1639,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.90,"1,576.70"
+,04/18/2026,Invoice,1644,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.52,"1,581.22"
+,04/18/2026,Invoice,1644,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.51,"1,585.73"
+,04/18/2026,Invoice,1644,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.61,"1,593.34"
+,04/18/2026,Invoice,1646,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.64,"1,597.98"
+,04/18/2026,Invoice,1646,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.63,"1,602.61"
+,04/18/2026,Invoice,1646,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.82,"1,610.43"
+,04/18/2026,Invoice,1647,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),9.18,"1,619.61"
+,04/18/2026,Invoice,1647,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),9.13,"1,628.74"
+,04/18/2026,Invoice,1647,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),15.43,"1,644.17"
+,04/18/2026,Invoice,1650,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.75,"1,644.92"
+,04/18/2026,Invoice,1650,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.76,"1,645.68"
+,04/18/2026,Invoice,1650,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.27,"1,646.95"
+,04/18/2026,Invoice,1652,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.03,"1,650.98"
+,04/18/2026,Invoice,1652,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.00,"1,654.98"
+,04/18/2026,Invoice,1652,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.77,"1,661.75"
+,04/18/2026,Invoice,1653,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.02,"1,664.77"
+,04/18/2026,Invoice,1653,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.02,"1,667.79"
+,04/18/2026,Invoice,1653,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),5.06,"1,672.85"
+,04/18/2026,Invoice,1656,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.15,"1,677.00"
+,04/18/2026,Invoice,1656,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.14,"1,681.14"
+,04/18/2026,Invoice,1656,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),6.96,"1,688.10"
+,04/18/2026,Invoice,1657,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.41,"1,689.51"
+,04/18/2026,Invoice,1657,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.42,"1,690.93"
+,04/18/2026,Invoice,1657,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.35,"1,693.28"
+,04/18/2026,Invoice,1664,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.63,"1,694.91"
+,04/18/2026,Invoice,1664,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.64,"1,696.55"
+,04/18/2026,Invoice,1664,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.74,"1,699.29"
+,04/18/2026,Invoice,1665,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.63,"1,700.92"
+,04/18/2026,Invoice,1665,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.64,"1,702.56"
+,04/18/2026,Invoice,1665,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.74,"1,705.30"
+,04/18/2026,Invoice,1667,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.02,"1,707.32"
+,04/18/2026,Invoice,1667,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.01,"1,709.33"
+,04/18/2026,Invoice,1667,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.37,"1,712.70"
+,04/22/2026,Invoice,1670,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.70,"1,713.40"
+,04/22/2026,Invoice,1670,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.69,"1,714.09"
+,04/22/2026,Invoice,1670,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.19,"1,715.28"
+,04/22/2026,Invoice,1671,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.70,"1,715.98"
+,04/22/2026,Invoice,1671,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.69,"1,716.67"
+,04/22/2026,Invoice,1671,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.19,"1,717.86"
+,04/22/2026,Invoice,1673,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.39,"1,720.25"
+,04/22/2026,Invoice,1673,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.40,"1,722.65"
+,04/22/2026,Invoice,1673,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.00,"1,726.65"
+,04/22/2026,Invoice,1676,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.01,"1,728.66"
+,04/22/2026,Invoice,1676,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.00,"1,730.66"
+,04/22/2026,Invoice,1676,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.38,"1,734.04"
+,04/22/2026,Invoice,1677,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.39,"1,735.43"
+,04/22/2026,Invoice,1677,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.38,"1,736.81"
+,04/22/2026,Invoice,1677,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.33,"1,739.14"
+,04/22/2026,Invoice,1680,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.55,"1,746.69"
+,04/22/2026,Invoice,1680,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),7.51,"1,754.20"
+,04/22/2026,Invoice,1680,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),12.67,"1,766.87"
+,04/22/2026,Invoice,1679,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.29,"1,769.16"
+,04/22/2026,Invoice,1679,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.28,"1,771.44"
+,04/22/2026,Invoice,1679,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.84,"1,775.28"
+,04/22/2026,Invoice,1681,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.35,"1,783.63"
+,04/22/2026,Invoice,1681,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),8.32,"1,791.95"
+,04/22/2026,Invoice,1681,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),14.03,"1,805.98"
+,04/22/2026,Invoice,1685,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),11.69,"1,817.67"
+,04/22/2026,Invoice,1685,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),11.64,"1,829.31"
+,04/22/2026,Invoice,1685,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),19.64,"1,848.95"
+,04/24/2026,Invoice,1690,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.64,"1,851.59"
+,04/24/2026,Invoice,1690,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.63,"1,854.22"
+,04/24/2026,Invoice,1690,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),4.45,"1,858.67"
+,04/24/2026,Invoice,1691,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.65,"1,860.32"
+,04/24/2026,Invoice,1691,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),1.63,"1,861.95"
+,04/24/2026,Invoice,1691,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.74,"1,864.69"
+,04/24/2026,Invoice,1695,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.31,"1,867.00"
+,04/24/2026,Invoice,1695,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),2.31,"1,869.31"
+,04/24/2026,Invoice,1695,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),3.89,"1,873.20"
+Total for Missouri Department of Revenue Payable,,,,,,,,"$1,873.20",
+Out Of Scope Agency Payable,,,,,,,,,
+,03/09/2025,Invoice,1105,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/10/2025,Invoice,1123,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/10/2025,Invoice,1124,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/10/2025,Invoice,1125,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/10/2025,Invoice,1126,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/12/2025,Invoice,1131,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/14/2025,Invoice,1134,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/14/2025,Invoice,1135,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/14/2025,Invoice,1137,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/22/2025,Invoice,1150,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/22/2025,Invoice,1152,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/22/2025,Invoice,1155,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/18/2025,Invoice,1159,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/21/2025,Invoice,1165,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/24/2025,Invoice,1168,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/24/2025,Invoice,1169,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/24/2025,Invoice,1170,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/24/2025,Invoice,1172,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/25/2025,Invoice,1174,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/30/2025,Invoice,1181,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/30/2025,Invoice,1182,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/30/2025,Invoice,1183,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/30/2025,Invoice,1186,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/30/2025,Invoice,1188,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,04/30/2025,Invoice,1192,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/08/2025,Invoice,1195,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/08/2025,Invoice,1196,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/08/2025,Invoice,1197,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/08/2025,Invoice,1198,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/08/2025,Invoice,1200,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/08/2025,Invoice,1201,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/09/2025,Invoice,1204,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/10/2025,Invoice,1209,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/12/2025,Invoice,1211,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,06/04/2025,Invoice,1213,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,05/20/2025,Invoice,1215,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,06/03/2025,Invoice,1237,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,06/09/2025,Invoice,1269,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+,07/15/2025,Invoice,1277,Shopify - bfda6c-2 Customer,Shopify - bfda6c-2,,Accounts Receivable (A/R),0.00,0.00
+,07/31/2025,Invoice,1280,Shopify - bfda6c-2 Customer,,,Accounts Receivable (A/R),0.00,0.00
+Total for Out Of Scope Agency Payable,,,,,,,,$0.00,
+Late Fee Income,,,,,,,,,
+,06/04/2025,Invoice,1213,Shopify - bfda6c-2 Customer,,"Flat fee - Applied on May 24, 2025",Accounts Receivable (A/R),25.00,25.00
+,07/15/2025,Invoice,1277,Shopify - bfda6c-2 Customer,Shopify - bfda6c-2,"Flat fee - Applied on Jul 22, 2025",Accounts Receivable (A/R),23.13,48.13
+,08/23/2025,Invoice,1297,Shopify - bfda6c-2 Customer,,"Flat fee - Applied on Oct 30, 2025",Accounts Receivable (A/R),19.74,67.87
+Total for Late Fee Income,,,,,,,,$67.87,
+Channel Sales,,,,,,,,,
+Shopify Sales,,,,,,,,,
+,03/08/2025,Invoice,1102,Shopify - bfda6c-2 Customer,,Ship table,Accounts Receivable (A/R),70.00,70.00
+,03/09/2025,Invoice,1105,Shopify - bfda6c-2 Customer,,Vintage Koi Fish planter with tray,Accounts Receivable (A/R),300.00,370.00
+,04/10/2025,Invoice,1119,Shopify - bfda6c-2 Customer,,"Small Staffordshire Red Dog 7""",Accounts Receivable (A/R),100.00,470.00
+,04/10/2025,Invoice,1120,Shopify - bfda6c-2 Customer,,Wedgewood Trinket Dish - black/white,Accounts Receivable (A/R),40.00,510.00
+,04/10/2025,Invoice,1123,Shopify - bfda6c-2 Customer,,Portugese Faience Oyster Plate Set/2,Accounts Receivable (A/R),160.00,670.00
+,04/10/2025,Invoice,1123,Shopify - bfda6c-2 Customer,,Wooden Tang Horse,Accounts Receivable (A/R),30.00,700.00
+,04/10/2025,Invoice,1123,Shopify - bfda6c-2 Customer,,Abigails 3 piece blanc de chine Tulipiere,Accounts Receivable (A/R),200.00,900.00
+,04/10/2025,Invoice,1124,Shopify - bfda6c-2 Customer,,Turquoise Enamel Dragon Plate,Accounts Receivable (A/R),200.00,"1,100.00"
+,04/10/2025,Invoice,1125,Shopify - bfda6c-2 Customer,,Royal Doulton Brown Aesthetic Platter,Accounts Receivable (A/R),275.00,"1,375.00"
+,04/10/2025,Invoice,1126,Shopify - bfda6c-2 Customer,,Calyx Ware Singapore Bird Salad Plate,Accounts Receivable (A/R),180.00,"1,555.00"
+,04/10/2025,Invoice,1126,Shopify - bfda6c-2 Customer,,Large Staffordshire Dog Red/White,Accounts Receivable (A/R),200.00,"1,755.00"
+,04/10/2025,Invoice,1127,Shopify - bfda6c-2 Customer,,Pair Brass Swan Sconces,Accounts Receivable (A/R),150.00,"1,905.00"
+,04/11/2025,Invoice,1129,Shopify - bfda6c-2 Customer,,Vintage Portuguese hand painted fish mold,Accounts Receivable (A/R),30.00,"1,935.00"
+,04/12/2025,Invoice,1131,Shopify - bfda6c-2 Customer,,Woven brass box,Accounts Receivable (A/R),50.00,"1,985.00"
+,04/14/2025,Invoice,1134,Shopify - bfda6c-2 Customer,,Labrador Retriever Bookends,Accounts Receivable (A/R),150.00,"2,135.00"
+,04/14/2025,Invoice,1135,Shopify - bfda6c-2 Customer,,Calligraphy brush small,Accounts Receivable (A/R),65.00,"2,200.00"
+,04/14/2025,Invoice,1135,Shopify - bfda6c-2 Customer,,Calligraphy brush small,Accounts Receivable (A/R),65.00,"2,265.00"
+,04/14/2025,Invoice,1137,Shopify - bfda6c-2 Customer,,Small White Staffordshire dog,Accounts Receivable (A/R),50.00,"2,315.00"
+,04/14/2025,Invoice,1137,Shopify - bfda6c-2 Customer,,custom shipping charge,Accounts Receivable (A/R),10.00,"2,325.00"
+,04/14/2025,Invoice,1139,Shopify - bfda6c-2 Customer,,custom shipping charge,Accounts Receivable (A/R),15.00,"2,340.00"
+,04/15/2025,Invoice,1142,Shopify - bfda6c-2 Customer,,Custom shipping charge,Accounts Receivable (A/R),12.00,"2,352.00"
+,04/15/2025,Invoice,1144,Shopify - bfda6c-2 Customer,,custom shipping charge,Accounts Receivable (A/R),12.00,"2,364.00"
+,04/15/2025,Invoice,1143,Shopify - bfda6c-2 Customer,,Staffordshire Dog Statue,Accounts Receivable (A/R),120.00,"2,484.00"
+,04/16/2025,Invoice,1146,Shopify - bfda6c-2 Customer,,Custom shipping charge,Accounts Receivable (A/R),30.00,"2,514.00"
+,04/17/2025,Invoice,1149,Shopify - bfda6c-2 Customer,,Vintage needlepoint pillow,Accounts Receivable (A/R),65.00,"2,579.00"
+,04/17/2025,Invoice,1149,Shopify - bfda6c-2 Customer,,Concrete Dalmation Statue,Accounts Receivable (A/R),300.00,"2,879.00"
+,04/22/2025,Invoice,1150,Shopify - bfda6c-2 Customer,,Rose Medallion Candle Holder,Accounts Receivable (A/R),95.00,"2,974.00"
+,04/22/2025,Invoice,1152,Shopify - bfda6c-2 Customer,,Petite Staffordshire Dog Pair,Accounts Receivable (A/R),130.00,"3,104.00"
+,04/22/2025,Invoice,1155,Shopify - bfda6c-2 Customer,,Cloisonne Cheetah with Stand,Accounts Receivable (A/R),150.00,"3,254.00"
+,04/18/2025,Invoice,1157,Shopify - bfda6c-2 Customer,,Custom shipping,Accounts Receivable (A/R),22.00,"3,276.00"
+,04/18/2025,Invoice,1158,Shopify - bfda6c-2 Customer,,Vintage Parquet Game Table,Accounts Receivable (A/R),200.00,"3,476.00"
+,04/18/2025,Invoice,1159,Shopify - bfda6c-2 Customer,,Fitz and Floyd Oceana serving tray,Accounts Receivable (A/R),65.00,"3,541.00"
+,04/18/2025,Invoice,1159,Shopify - bfda6c-2 Customer,,Fitz and Floyd large Oceana dish,Accounts Receivable (A/R),40.00,"3,581.00"
+,04/18/2025,Invoice,1159,Shopify - bfda6c-2 Customer,,Fitz & Floyd Oceana small trinket dish,Accounts Receivable (A/R),35.00,"3,616.00"
+,04/18/2025,Invoice,1159,Shopify - bfda6c-2 Customer,,Fitz and Floyd footed shell bowl,Accounts Receivable (A/R),65.00,"3,681.00"
+,04/22/2025,Invoice,1162,Shopify - bfda6c-2 Customer,,Vintage Andrea by Sadek starfish,Accounts Receivable (A/R),45.00,"3,726.00"
+,04/21/2025,Invoice,1163,Shopify - bfda6c-2 Customer,,Custom Shipping Charge,Accounts Receivable (A/R),25.00,"3,751.00"
+,04/21/2025,Invoice,1165,Shopify - bfda6c-2 Customer,,Green & White Chinoiserie Temple Jar,Accounts Receivable (A/R),275.00,"4,026.00"
+,04/24/2025,Invoice,1168,Shopify - bfda6c-2 Customer,,Vintage Fitz & Floyd Asparagus S&P,Accounts Receivable (A/R),30.00,"4,056.00"
+,04/24/2025,Invoice,1168,Shopify - bfda6c-2 Customer,,Vintage Red Ginger Jar Pair w/Stands,Accounts Receivable (A/R),100.00,"4,156.00"
+,04/24/2025,Invoice,1168,Shopify - bfda6c-2 Customer,,Midcentury Horse Book Ends,Accounts Receivable (A/R),60.00,"4,216.00"
+,04/24/2025,Invoice,1168,Shopify - bfda6c-2 Customer,,Custom Shipping Charge,Accounts Receivable (A/R),20.00,"4,236.00"
+,04/24/2025,Invoice,1169,Shopify - bfda6c-2 Customer,,XL Turquoise Foo Dog,Accounts Receivable (A/R),40.00,"4,276.00"
+,04/24/2025,Invoice,1169,Shopify - bfda6c-2 Customer,,VIntage FItz & Floyd Capetown Platter,Accounts Receivable (A/R),140.00,"4,416.00"
+,04/24/2025,Invoice,1169,Shopify - bfda6c-2 Customer,,Vintage Mini Brass Bamboo tray,Accounts Receivable (A/R),30.00,"4,446.00"
+,04/24/2025,Invoice,1169,Shopify - bfda6c-2 Customer,,Custom Shipping charge,Accounts Receivable (A/R),20.00,"4,466.00"
+,04/24/2025,Invoice,1170,Shopify - bfda6c-2 Customer,,Large dyed jade red calligraphy brush,Accounts Receivable (A/R),75.00,"4,541.00"
+,04/24/2025,Invoice,1170,Shopify - bfda6c-2 Customer,,Small dyed jade cobalt calligraphy brush,Accounts Receivable (A/R),65.00,"4,606.00"
+,04/24/2025,Invoice,1170,Shopify - bfda6c-2 Customer,,Vintage Red gurglefish pitcher,Accounts Receivable (A/R),35.00,"4,641.00"
+,04/24/2025,Invoice,1170,Shopify - bfda6c-2 Customer,,Vintage willow ware red plates x 2,Accounts Receivable (A/R),30.00,"4,671.00"
+,04/24/2025,Invoice,1170,Shopify - bfda6c-2 Customer,,Antique blue willow bread plate x 4,Accounts Receivable (A/R),40.00,"4,711.00"
+,04/24/2025,Invoice,1170,Shopify - bfda6c-2 Customer,,Custom Shipping charge,Accounts Receivable (A/R),14.00,"4,725.00"
+,04/24/2025,Invoice,1172,Shopify - bfda6c-2 Customer,,Large Vintage Chinoiserie Vase 18 inch,Accounts Receivable (A/R),150.00,"4,875.00"
+,04/24/2025,Invoice,1172,Shopify - bfda6c-2 Customer,,Vintage Italian Gilt Bow Mirror,Accounts Receivable (A/R),140.00,"5,015.00"
+,04/24/2025,Invoice,1172,Shopify - bfda6c-2 Customer,,Chinoserie Elephant Plant Stand,Accounts Receivable (A/R),120.00,"5,135.00"
+,04/24/2025,Invoice,1172,Shopify - bfda6c-2 Customer,,Vintage brass wall bow pair,Accounts Receivable (A/R),100.00,"5,235.00"
+,04/24/2025,Invoice,1172,Shopify - bfda6c-2 Customer,,Mid century federal style mirror,Accounts Receivable (A/R),125.00,"5,360.00"
+,04/24/2025,Invoice,1172,Shopify - bfda6c-2 Customer,,Gilted Pineapple bookends,Accounts Receivable (A/R),45.00,"5,405.00"
+,04/25/2025,Invoice,1174,Shopify - bfda6c-2 Customer,,VIntage set of 4 yellow Secla Portugal cup/saucer,Accounts Receivable (A/R),35.00,"5,440.00"
+,04/25/2025,Invoice,1174,Shopify - bfda6c-2 Customer,,Antique Blue Willow japan bowl,Accounts Receivable (A/R),30.00,"5,470.00"
+,04/25/2025,Invoice,1174,Shopify - bfda6c-2 Customer,,XL Mid Century Zaccagnini RIng Handled Urn,Accounts Receivable (A/R),150.00,"5,620.00"
+,04/25/2025,Invoice,1174,Shopify - bfda6c-2 Customer,,Custom 2 box Shipping Quote,Accounts Receivable (A/R),65.00,"5,685.00"
+,04/25/2025,Invoice,1175,Shopify - bfda6c-2 Customer,,The cutest lil baby ginger jar of all time ;),Accounts Receivable (A/R),20.00,"5,705.00"
+,04/27/2025,Invoice,1176,Shopify - bfda6c-2 Customer,,Vintage Pair of Chinoiserie Quail,Accounts Receivable (A/R),95.00,"5,800.00"
+,04/30/2025,Invoice,1177,Shopify - bfda6c-2 Customer,,Vintage Rose Medallion fan,Accounts Receivable (A/R),65.00,"5,865.00"
+,04/30/2025,Invoice,1180,Shopify - bfda6c-2 Customer,,Artichoke lidded sugar bowl,Accounts Receivable (A/R),30.00,"5,895.00"
+,04/30/2025,Invoice,1181,Shopify - bfda6c-2 Customer,,Chinoiserie Elephant Stand,Accounts Receivable (A/R),75.00,"5,970.00"
+,04/30/2025,Invoice,1181,Shopify - bfda6c-2 Customer,,Lovebirds vase,Accounts Receivable (A/R),35.00,"6,005.00"
+,04/30/2025,Invoice,1182,Shopify - bfda6c-2 Customer,,Mid Century Lobster Dish,Accounts Receivable (A/R),95.00,"6,100.00"
+,04/30/2025,Invoice,1183,Shopify - bfda6c-2 Customer,,Vintage Blue and White Scalloped Planter,Accounts Receivable (A/R),65.00,"6,165.00"
+,04/30/2025,Invoice,1185,Shopify - bfda6c-2 Customer,,10 Inch Vintage Rose Canton Plate,Accounts Receivable (A/R),70.00,"6,235.00"
+,04/30/2025,Invoice,1186,Shopify - bfda6c-2 Customer,,Vintage Mottahedeh ceramic Urn made in Italy,Accounts Receivable (A/R),75.00,"6,310.00"
+,04/30/2025,Invoice,1188,Shopify - bfda6c-2 Customer,,Vintage Italian toleware 2 Handled bucket,Accounts Receivable (A/R),195.00,"6,505.00"
+,04/30/2025,Invoice,1191,Shopify - bfda6c-2 Customer,,Vintage Asparagus Meiselman pitcher,Accounts Receivable (A/R),95.00,"6,600.00"
+,04/30/2025,Invoice,1192,Shopify - bfda6c-2 Customer,,Vintage Shell Needlepoint,Accounts Receivable (A/R),65.00,"6,665.00"
+,04/30/2025,Invoice,1192,Shopify - bfda6c-2 Customer,,Celadon Shell trinket dish with sea glass,Accounts Receivable (A/R),35.00,"6,700.00"
+,05/02/2025,Invoice,1193,Shopify - bfda6c-2 Customer,,Wedgwood Jasperware lidded bowl,Accounts Receivable (A/R),65.00,"6,765.00"
+,05/02/2025,Invoice,1193,Shopify - bfda6c-2 Customer,,Pink Floral bowl pewter encased,Accounts Receivable (A/R),35.00,"6,800.00"
+,05/08/2025,Invoice,1195,Shopify - bfda6c-2 Customer,,Vintage Mottahedeh Swan compote,Accounts Receivable (A/R),70.00,"6,870.00"
+,05/08/2025,Invoice,1196,Shopify - bfda6c-2 Customer,,Vintage large single pineapple bookend,Accounts Receivable (A/R),45.00,"6,915.00"
+,05/08/2025,Invoice,1197,Shopify - bfda6c-2 Customer,,Vintage Portugese hand painted footed bowl,Accounts Receivable (A/R),50.00,"6,965.00"
+,05/08/2025,Invoice,1198,Shopify - bfda6c-2 Customer,,Vintage cabbage salt and pepper set,Accounts Receivable (A/R),25.00,"6,990.00"
+,05/08/2025,Invoice,1198,Shopify - bfda6c-2 Customer,,Pink Bordallo Tea set trio,Accounts Receivable (A/R),120.00,"7,110.00"
+,05/08/2025,Invoice,1199,Shopify - bfda6c-2 Customer,,"Vintage Butterfly bowl, brass encased",Accounts Receivable (A/R),65.00,"7,175.00"
+,05/08/2025,Invoice,1199,Shopify - bfda6c-2 Customer,,Vintage Brass hobnail planter,Accounts Receivable (A/R),120.00,"7,295.00"
+,05/08/2025,Invoice,1200,Shopify - bfda6c-2 Customer,,VIntage Koi Divided Dish in Famille Verte colorway,Accounts Receivable (A/R),99.00,"7,394.00"
+,05/08/2025,Invoice,1201,Shopify - bfda6c-2 Customer,,Vintage Nautilus compote,Accounts Receivable (A/R),40.00,"7,434.00"
+,05/08/2025,Invoice,1201,Shopify - bfda6c-2 Customer,,Vintage brass shell box,Accounts Receivable (A/R),50.00,"7,484.00"
+,05/08/2025,Invoice,1201,Shopify - bfda6c-2 Customer,,Vintage Brass Shell Plate,Accounts Receivable (A/R),50.00,"7,534.00"
+,05/08/2025,Invoice,1201,Shopify - bfda6c-2 Customer,,Vintage brass conch shell paperweight,Accounts Receivable (A/R),35.00,"7,569.00"
+,05/09/2025,Invoice,1203,Shopify - bfda6c-2 Customer,,Vintage Tobacco Leaf bowl in brass frame,Accounts Receivable (A/R),65.00,"7,634.00"
+,05/09/2025,Invoice,1204,Shopify - bfda6c-2 Customer,,Vintage Pink Conch Planter,Accounts Receivable (A/R),48.95,"7,682.95"
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,Antique bok choy small plate,Accounts Receivable (A/R),120.00,"7,802.95"
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,"Antique 5.5"" dragon plate",Accounts Receivable (A/R),60.00,"7,862.95"
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,Vintage Porcelain stalking tiger,Accounts Receivable (A/R),40.00,"7,902.95"
+,05/09/2025,Invoice,1206,Shopify - bfda6c-2 Customer,,Vintage Daisy Lidded Tureen,Accounts Receivable (A/R),50.00,"7,952.95"
+,05/09/2025,Invoice,1206,Shopify - bfda6c-2 Customer,,Vintage butterfly dish in brass frame,Accounts Receivable (A/R),48.00,"8,000.95"
+,05/09/2025,Invoice,1207,Shopify - bfda6c-2 Customer,,Vintage Floral Needlepoint Handbag,Accounts Receivable (A/R),130.00,"8,130.95"
+,05/09/2025,Invoice,1207,Shopify - bfda6c-2 Customer,,Italian Majolica Style Tuplip lidded dish,Accounts Receivable (A/R),75.00,"8,205.95"
+,05/10/2025,Invoice,1209,Shopify - bfda6c-2 Customer,,"Antique Bok Choy Plate, square",Accounts Receivable (A/R),125.00,"8,330.95"
+,05/12/2025,Invoice,1211,Shopify - bfda6c-2 Customer,,Vintage Covered Duck Tureen w/ green & pink lillies,Accounts Receivable (A/R),125.00,"8,455.95"
+,05/12/2025,Invoice,1211,Shopify - bfda6c-2 Customer,,VIntage Brass Pineapple Vase,Accounts Receivable (A/R),75.00,"8,530.95"
+,05/12/2025,Invoice,1211,Shopify - bfda6c-2 Customer,,Vintage brass pineapple bookends,Accounts Receivable (A/R),60.00,"8,590.95"
+,05/12/2025,Invoice,1211,Shopify - bfda6c-2 Customer,,Vintage lidded mallard brass duck,Accounts Receivable (A/R),100.00,"8,690.95"
+,06/04/2025,Invoice,1213,Shopify - bfda6c-2 Customer,,Vintage XL lucite clam shell bowl,Accounts Receivable (A/R),30.00,"8,720.95"
+,06/04/2025,Invoice,1213,Shopify - bfda6c-2 Customer,,Vintage Royal Haegar Gold basketweave purse bowl :),Accounts Receivable (A/R),50.00,"8,770.95"
+,05/20/2025,Invoice,1214,Shopify - bfda6c-2 Customer,,Tobacco leaf Staffordshire style dog pair petite,Accounts Receivable (A/R),75.00,"8,845.95"
+,05/20/2025,Invoice,1215,Shopify - bfda6c-2 Customer,,Vintage Chinoiserie 3 piece Tobacco leaf monkey tureen set,Accounts Receivable (A/R),"1,000.00","9,845.95"
+,06/03/2025,Invoice,1237,Shopify - bfda6c-2 Customer,,"21"" Famille Rose Porcelain Bowl",Accounts Receivable (A/R),"1,000.00","10,845.95"
+,06/06/2025,Invoice,1267,Shopify - bfda6c-2 Customer,,Vintage Giltwood Bow Mirror,Accounts Receivable (A/R),275.00,"11,120.95"
+,06/09/2025,Invoice,1269,Shopify - bfda6c-2 Customer,,Vintage Cabbage Tureen,Accounts Receivable (A/R),75.00,"11,195.95"
+,06/09/2025,Invoice,1269,Shopify - bfda6c-2 Customer,,Set of 3 vintage cabbage plates (matching tureen),Accounts Receivable (A/R),60.00,"11,255.95"
+,06/09/2025,Invoice,1269,Shopify - bfda6c-2 Customer,,Butterfly Octagon Bowl w/ robins blue interior,Accounts Receivable (A/R),115.00,"11,370.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,White Wicker Elephant with Tray,Accounts Receivable (A/R),700.00,"12,070.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,White Wicker Elephant,Accounts Receivable (A/R),300.00,"12,370.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,Antique round gilt mirror,Accounts Receivable (A/R),350.00,"12,720.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,Vintage Giltwood Oval mirror,Accounts Receivable (A/R),125.00,"12,845.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,Vintage Syrocco Oval mirror,Accounts Receivable (A/R),115.00,"12,960.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,Giltwood bow swag mirror,Accounts Receivable (A/R),130.00,"13,090.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,2 piece Vintage Spanish Lattice Rope planter,Accounts Receivable (A/R),80.00,"13,170.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,Italian bow mirror white,Accounts Receivable (A/R),150.00,"13,320.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,Blue and white federal lamp,Accounts Receivable (A/R),50.00,"13,370.95"
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,Brass umbrella stand,Accounts Receivable (A/R),60.00,"13,430.95"
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,Abigail’s 6 well oyster plate in yellow,Accounts Receivable (A/R),60.00,"13,490.95"
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,Abigail’s 6 well oyster plate in blue,Accounts Receivable (A/R),60.00,"13,550.95"
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,Abigail’s 6 well oyster plate in purple,Accounts Receivable (A/R),60.00,"13,610.95"
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,Abigail’s 6 well oyster plate in coral,Accounts Receivable (A/R),60.00,"13,670.95"
+,07/15/2025,Invoice,1277,Shopify - bfda6c-2 Customer,Shopify - bfda6c-2,"Brass 13"" Pineapple Urns",Accounts Receivable (A/R),277.61,"13,948.56"
+,07/31/2025,Invoice,1280,Shopify - bfda6c-2 Customer,,Guilt Florentine oval,Accounts Receivable (A/R),70.00,"14,018.56"
+,08/28/2025,Invoice,1299,Shopify - bfda6c-2 Customer,,Vintage Chinoiserie Elephant Stool,Accounts Receivable (A/R),350.00,"14,368.56"
+,08/28/2025,Invoice,1299,Shopify - bfda6c-2 Customer,,Vintage brass wall bracket,Accounts Receivable (A/R),75.00,"14,443.56"
+,10/02/2025,Invoice,1311,Shopify - bfda6c-2 Customer,,Vintage Brass Cachepot,Accounts Receivable (A/R),25.00,"14,468.56"
+,10/02/2025,Invoice,1311,Shopify - bfda6c-2 Customer,,Vintage Brass Bamboo Tray,Accounts Receivable (A/R),75.00,"14,543.56"
+,10/08/2025,Invoice,1313,Shopify - bfda6c-2 Customer,,Pair Vintage green & white tole lamps,Accounts Receivable (A/R),"1,100.00","15,643.56"
+,10/08/2025,Invoice,1313,Shopify - bfda6c-2 Customer,,Murano glass candelabra,Accounts Receivable (A/R),750.00,"16,393.56"
+,08/23/2025,Invoice,1297,Shopify - bfda6c-2 Customer,,Vintage Fondeville Ambassador Ware Plate,Accounts Receivable (A/R),19.74,"16,413.30"
+,08/23/2025,Invoice,1297,Shopify - bfda6c-2 Customer,,Antique Japanese Imari Pheasant Plate - Noire,Accounts Receivable (A/R),27.63,"16,440.93"
+,08/23/2025,Invoice,1297,Shopify - bfda6c-2 Customer,,Vintage Raymond Waites Elephant Plate,Accounts Receivable (A/R),19.74,"16,460.67"
+,11/21/2025,Invoice,1320,Shopify - bfda6c-2 Customer,,Vintage Johnson Brothers “Friendly Village” China set,Accounts Receivable (A/R),800.00,"17,260.67"
+,12/08/2025,Invoice,1329,Shopify - bfda6c-2 Customer,,Custom Sky Blue Lacquer Desk & Hutch -,Accounts Receivable (A/R),"2,000.00","19,260.67"
+,12/08/2025,Invoice,1329,Shopify - bfda6c-2 Customer,,Custom Lacquer Sky Blue Console,Accounts Receivable (A/R),950.00,"20,210.67"
+,12/16/2025,Invoice,1334,Shopify - bfda6c-2 Customer,,Florentine Carved Box - Sky Blue,Accounts Receivable (A/R),75.00,"20,285.67"
+,01/05/2026,Invoice,1338,Shopify - bfda6c-2 Customer,,Vintage Chinoiserie brown lamp pair,Accounts Receivable (A/R),320.00,"20,605.67"
+,02/11/2026,Invoice,1356,Shopify - bfda6c-2 Customer,,Vintage Tobacco Leaf Plate,Accounts Receivable (A/R),75.00,"20,680.67"
+,02/12/2026,Invoice,1364,Shopify - bfda6c-2 Customer,,Green Bavaria Plate,Accounts Receivable (A/R),30.00,"20,710.67"
+,02/12/2026,Invoice,1364,Shopify - bfda6c-2 Customer,,Turquoise Minton Plates x 2,Accounts Receivable (A/R),30.00,"20,740.67"
+,02/12/2026,Invoice,1365,Shopify - bfda6c-2 Customer,,Milk Glass Key Vase,Accounts Receivable (A/R),35.00,"20,775.67"
+,02/12/2026,Invoice,1365,Shopify - bfda6c-2 Customer,,Blue Watercolor Framed Art,Accounts Receivable (A/R),75.00,"20,850.67"
+,02/12/2026,Invoice,1369,Shopify - bfda6c-2 Customer,,Brass Bamboo Handled Tray,Accounts Receivable (A/R),130.00,"20,980.67"
+,02/12/2026,Invoice,1370,Shopify - bfda6c-2 Customer,,Enamel Flower in Pot,Accounts Receivable (A/R),45.00,"21,025.67"
+,02/12/2026,Invoice,1371,Shopify - bfda6c-2 Customer,,Natural Bamboo Easel,Accounts Receivable (A/R),45.00,"21,070.67"
+,02/12/2026,Invoice,1373,Shopify - bfda6c-2 Customer,,Turqoise minton plates x2,Accounts Receivable (A/R),30.00,"21,100.67"
+,02/12/2026,Invoice,1380,Shopify - bfda6c-2 Customer,,Vintage aqua bordallo plate,Accounts Receivable (A/R),20.00,"21,120.67"
+,02/14/2026,Invoice,1389,Shopify - bfda6c-2 Customer,,Swan match strike with matches,Accounts Receivable (A/R),24.00,"21,144.67"
+,02/26/2026,Invoice,1397,Shopify - bfda6c-2 Customer,,"Vintage inspired, greyhound framed art",Accounts Receivable (A/R),100.00,"21,244.67"
+,02/26/2026,Invoice,1397,Shopify - bfda6c-2 Customer,,"Vintage inspired horse, in field framed art",Accounts Receivable (A/R),200.00,"21,444.67"
+,03/06/2026,Invoice,1407,Shopify - bfda6c-2 Customer,,Pink Majolica Plate,Accounts Receivable (A/R),75.00,"21,519.67"
+,03/06/2026,Invoice,1412,Shopify - bfda6c-2 Customer,,Italian Pink Birdcage,Accounts Receivable (A/R),20.00,"21,539.67"
+,03/07/2026,Invoice,1428,Shopify - bfda6c-2 Customer,,Bok Choy Plate,Accounts Receivable (A/R),150.00,"21,689.67"
+,03/12/2026,Invoice,1440,Shopify - bfda6c-2 Customer,,Vintage wicker elephant with tray,Accounts Receivable (A/R),300.00,"21,989.67"
+,03/16/2026,Invoice,1459,Shopify - bfda6c-2 Customer,,"Thousand Butterfly Plate Rose Canton 9"" Plate",Accounts Receivable (A/R),50.00,"22,039.67"
+,03/20/2026,Invoice,1486,Shopify - bfda6c-2 Customer,,Japanese Imari Pheasant Plate - Red,Accounts Receivable (A/R),35.00,"22,074.67"
+,03/24/2026,Invoice,1496,Shopify - bfda6c-2 Customer,,Cane Weave Vases x 2,Accounts Receivable (A/R),80.00,"22,154.67"
+,03/31/2026,Invoice,1498,Shopify - bfda6c-2 Customer,,Tulip Seashell Print in Bone & Brass Frame,Accounts Receivable (A/R),45.00,"22,199.67"
+,03/31/2026,Invoice,1498,Shopify - bfda6c-2 Customer,,Murex Seashell Print in Bone & Brass Frame,Accounts Receivable (A/R),45.00,"22,244.67"
+,03/31/2026,Invoice,1499,Shopify - bfda6c-2 Customer,,Greyhounds in Field by Earl Vintage Painting Print on Canvas,Accounts Receivable (A/R),65.00,"22,309.67"
+,03/31/2026,Invoice,1500,Shopify - bfda6c-2 Customer,,Yacht America- New York Harbor Vintage Canvas Painting Print,Accounts Receivable (A/R),115.00,"22,424.67"
+,03/31/2026,Invoice,1500,Shopify - bfda6c-2 Customer,,American Whaling Ship with Sperm Whale Vintage Painting Print,Accounts Receivable (A/R),65.00,"22,489.67"
+,03/31/2026,Invoice,1501,Shopify - bfda6c-2 Customer,,A Bay Hunter Vintage Painting Print on Canvas,Accounts Receivable (A/R),65.00,"22,554.67"
+,03/31/2026,Invoice,1501,Shopify - bfda6c-2 Customer,,Woman Reading Framed Painting Print on Canvas,Accounts Receivable (A/R),65.00,"22,619.67"
+,04/01/2026,Invoice,1504,Shopify - bfda6c-2 Customer,,Vintage Roman Coin Scarf Necklace,Accounts Receivable (A/R),65.00,"22,684.67"
+,04/01/2026,Invoice,1504,Shopify - bfda6c-2 Customer,,Vintage British Coin Scarf Necklace,Accounts Receivable (A/R),65.00,"22,749.67"
+,04/01/2026,Invoice,1504,Shopify - bfda6c-2 Customer,,Vintage Roman Coin Scarf Necklace,Accounts Receivable (A/R),65.00,"22,814.67"
+,04/01/2026,Invoice,1505,Shopify - bfda6c-2 Customer,,Vintage Liberty Nickel Coin Scarf Necklace,Accounts Receivable (A/R),65.00,"22,879.67"
+,04/01/2026,Invoice,1507,Shopify - bfda6c-2 Customer,,Vintage British Coin Scarf Necklace,Accounts Receivable (A/R),65.00,"22,944.67"
+,04/01/2026,Invoice,1508,Shopify - bfda6c-2 Customer,,Bordallo Pinhiero Pink Cabbage Plates,Accounts Receivable (A/R),65.00,"23,009.67"
+,04/02/2026,Invoice,1510,Shopify - bfda6c-2 Customer,,Vintage Roman Coin Scarf Necklace,Accounts Receivable (A/R),65.00,"23,074.67"
+,04/02/2026,Invoice,1512,Shopify - bfda6c-2 Customer,,Vintage Hummingbird Coin Scarf Necklace,Accounts Receivable (A/R),65.00,"23,139.67"
+,04/04/2026,Invoice,1515,Shopify - bfda6c-2 Customer,,Murex Seashell Print in Bone & Brass Frame,Accounts Receivable (A/R),45.00,"23,184.67"
+,04/04/2026,Invoice,1515,Shopify - bfda6c-2 Customer,,Tulip Seashell Print in Bone & Brass Frame,Accounts Receivable (A/R),45.00,"23,229.67"
+,04/04/2026,Invoice,1516,Shopify - bfda6c-2 Customer,,Vintage brass champagne chiller,Accounts Receivable (A/R),150.00,"23,379.67"
+,04/04/2026,Invoice,1517,Shopify - bfda6c-2 Customer,,Asian Rice Jar,Accounts Receivable (A/R),75.00,"23,454.67"
+,04/05/2026,Invoice,1520,Shopify - bfda6c-2 Customer,,"Ironstone Blue & White 13.5"" Bowl",Accounts Receivable (A/R),120.00,"23,574.67"
+,04/05/2026,Invoice,1541,Shopify - bfda6c-2 Customer,,Bordallo Pinhiero Pink Cabbage Plate,Accounts Receivable (A/R),65.00,"23,639.67"
+,04/06/2026,Invoice,1544,Shopify - bfda6c-2 Customer,,"Turquoise Pink and Green Majolica 10.25"" Plate",Accounts Receivable (A/R),165.00,"23,804.67"
+,04/06/2026,Invoice,1544,Shopify - bfda6c-2 Customer,,"Majolica Catchall with Handles 10.5""",Accounts Receivable (A/R),175.00,"23,979.67"
+,04/08/2026,Invoice,1553,Shopify - bfda6c-2 Customer,,International Silver Plate Oval Dish,Accounts Receivable (A/R),35.00,"24,014.67"
+,04/10/2026,Invoice,1559,Shopify - bfda6c-2 Customer,,"Cut Glass Lidded Bowl 9""",Accounts Receivable (A/R),45.00,"24,059.67"
+,04/10/2026,Invoice,1559,Shopify - bfda6c-2 Customer,,Glass Swan,Accounts Receivable (A/R),55.00,"24,114.67"
+,04/10/2026,Invoice,1560,Shopify - bfda6c-2 Customer,,Staffordshire Ginger Jar,Accounts Receivable (A/R),30.00,"24,144.67"
+,04/10/2026,Invoice,1566,Shopify - bfda6c-2 Customer,,Brass and Black Cameo Andirons,Accounts Receivable (A/R),450.00,"24,594.67"
+,04/11/2026,Invoice,1573,Shopify - bfda6c-2 Customer,,"Hollywood Regency Brass Bamboo Round Tray 14""",Accounts Receivable (A/R),140.00,"24,734.67"
+,04/15/2026,Invoice,1585,Shopify - bfda6c-2 Customer,,Footed blue opaline bowl with gold rim,Accounts Receivable (A/R),150.00,"24,884.67"
+,04/18/2026,Invoice,1591,Shopify - bfda6c-2 Customer,,Antique Federal style convex mirror,Accounts Receivable (A/R),"1,500.00","26,384.67"
+,04/18/2026,Invoice,1596,Shopify - bfda6c-2 Customer,,Kutani,Accounts Receivable (A/R),20.00,"26,404.67"
+,04/18/2026,Invoice,1596,Shopify - bfda6c-2 Customer,,Rose plate,Accounts Receivable (A/R),85.00,"26,489.67"
+,04/18/2026,Invoice,1596,Shopify - bfda6c-2 Customer,,Parrot plate,Accounts Receivable (A/R),80.00,"26,569.67"
+,04/18/2026,Invoice,1599,Shopify - bfda6c-2 Customer,,Brass bowl,Accounts Receivable (A/R),200.00,"26,769.67"
+,04/18/2026,Invoice,1601,Shopify - bfda6c-2 Customer,,Lucite grapes,Accounts Receivable (A/R),150.00,"26,919.67"
+,04/18/2026,Invoice,1601,Shopify - bfda6c-2 Customer,,Blue planter,Accounts Receivable (A/R),100.00,"27,019.67"
+,04/18/2026,Invoice,1602,Shopify - bfda6c-2 Customer,,Green Wedgewood vase,Accounts Receivable (A/R),40.00,"27,059.67"
+,04/18/2026,Invoice,1604,Shopify - bfda6c-2 Customer,,Blue Willow mini footbath,Accounts Receivable (A/R),75.00,"27,134.67"
+,04/18/2026,Invoice,1605,Shopify - bfda6c-2 Customer,,Butterfly plate,Accounts Receivable (A/R),20.00,"27,154.67"
+,04/18/2026,Invoice,1605,Shopify - bfda6c-2 Customer,,Crystal tray,Accounts Receivable (A/R),100.00,"27,254.67"
+,04/18/2026,Invoice,1605,Shopify - bfda6c-2 Customer,,Grapes,Accounts Receivable (A/R),115.00,"27,369.67"
+,04/18/2026,Invoice,1605,Shopify - bfda6c-2 Customer,,Cranberry jug,Accounts Receivable (A/R),12.00,"27,381.67"
+,04/18/2026,Invoice,1605,Shopify - bfda6c-2 Customer,,Dish,Accounts Receivable (A/R),18.00,"27,399.67"
+,04/18/2026,Invoice,1607,Shopify - bfda6c-2 Customer,,Cut glass bowl,Accounts Receivable (A/R),20.00,"27,419.67"
+,04/18/2026,Invoice,1615,Shopify - bfda6c-2 Customer,,Tiger,Accounts Receivable (A/R),275.00,"27,694.67"
+,04/18/2026,Invoice,1615,Shopify - bfda6c-2 Customer,,Ring,Accounts Receivable (A/R),35.00,"27,729.67"
+,04/18/2026,Invoice,1616,Shopify - bfda6c-2 Customer,,Famille rose 14” bowl,Accounts Receivable (A/R),500.00,"28,229.67"
+,04/18/2026,Invoice,1617,Shopify - bfda6c-2 Customer,,Bag,Accounts Receivable (A/R),90.00,"28,319.67"
+,04/18/2026,Invoice,1617,Shopify - bfda6c-2 Customer,,Tumbler,Accounts Receivable (A/R),44.00,"28,363.67"
+,04/18/2026,Invoice,1617,Shopify - bfda6c-2 Customer,,Tassle,Accounts Receivable (A/R),15.00,"28,378.67"
+,04/18/2026,Invoice,1617,Shopify - bfda6c-2 Customer,,Shades,Accounts Receivable (A/R),180.00,"28,558.67"
+,04/18/2026,Invoice,1618,Shopify - bfda6c-2 Customer,,Chinoiserie insulated tumbler,Accounts Receivable (A/R),44.00,"28,602.67"
+,04/18/2026,Invoice,1618,Shopify - bfda6c-2 Customer,,Whaling ship print bone frame,Accounts Receivable (A/R),48.00,"28,650.67"
+,04/18/2026,Invoice,1618,Shopify - bfda6c-2 Customer,,Hummer dust tote bag small,Accounts Receivable (A/R),81.00,"28,731.67"
+,04/18/2026,Invoice,1623,Shopify - bfda6c-2 Customer,,Vintage Italian oyster shaped dishes,Accounts Receivable (A/R),50.00,"28,781.67"
+,04/18/2026,Invoice,1624,Shopify - bfda6c-2 Customer,,Cachepot,Accounts Receivable (A/R),50.00,"28,831.67"
+,04/18/2026,Invoice,1627,Shopify - bfda6c-2 Customer,,Pewter elephant,Accounts Receivable (A/R),25.00,"28,856.67"
+,04/18/2026,Invoice,1627,Shopify - bfda6c-2 Customer,,Vintage crane and pine jar,Accounts Receivable (A/R),120.00,"28,976.67"
+,04/18/2026,Invoice,1628,Shopify - bfda6c-2 Customer,,Greyhound,Accounts Receivable (A/R),20.00,"28,996.67"
+,04/18/2026,Invoice,1628,Shopify - bfda6c-2 Customer,,Dish,Accounts Receivable (A/R),20.00,"29,016.67"
+,04/18/2026,Invoice,1628,Shopify - bfda6c-2 Customer,,Dish,Accounts Receivable (A/R),24.00,"29,040.67"
+,04/18/2026,Invoice,1628,Shopify - bfda6c-2 Customer,,Dish,Accounts Receivable (A/R),15.00,"29,055.67"
+,04/18/2026,Invoice,1628,Shopify - bfda6c-2 Customer,,Platter,Accounts Receivable (A/R),25.00,"29,080.67"
+,04/18/2026,Invoice,1629,Shopify - bfda6c-2 Customer,,Italian intrada porcelain leopard,Accounts Receivable (A/R),165.00,"29,245.67"
+,04/18/2026,Invoice,1629,Shopify - bfda6c-2 Customer,,Small light green ginger jar with lid,Accounts Receivable (A/R),50.00,"29,295.67"
+,04/18/2026,Invoice,1629,Shopify - bfda6c-2 Customer,,Limoges vanity tray,Accounts Receivable (A/R),45.00,"29,340.67"
+,04/18/2026,Invoice,1631,Shopify - bfda6c-2 Customer,,Vase,Accounts Receivable (A/R),25.00,"29,365.67"
+,04/18/2026,Invoice,1631,Shopify - bfda6c-2 Customer,,Lamp,Accounts Receivable (A/R),15.00,"29,380.67"
+,04/18/2026,Invoice,1631,Shopify - bfda6c-2 Customer,,Vase,Accounts Receivable (A/R),45.00,"29,425.67"
+,04/18/2026,Invoice,1632,Shopify - bfda6c-2 Customer,,Vintage Japanese blue and white hydrangea bowl,Accounts Receivable (A/R),40.00,"29,465.67"
+,04/18/2026,Invoice,1634,Shopify - bfda6c-2 Customer,,Vase,Accounts Receivable (A/R),120.00,"29,585.67"
+,04/18/2026,Invoice,1634,Shopify - bfda6c-2 Customer,,Vase,Accounts Receivable (A/R),115.00,"29,700.67"
+,04/18/2026,Invoice,1635,Shopify - bfda6c-2 Customer,,Limoge trinket dish,Accounts Receivable (A/R),25.00,"29,725.67"
+,04/18/2026,Invoice,1635,Shopify - bfda6c-2 Customer,,Limoges butter pat,Accounts Receivable (A/R),20.00,"29,745.67"
+,04/18/2026,Invoice,1639,Shopify - bfda6c-2 Customer,,Lidded egg dish with stand,Accounts Receivable (A/R),45.00,"29,790.67"
+,04/18/2026,Invoice,1644,Shopify - bfda6c-2 Customer,,Vase,Accounts Receivable (A/R),30.00,"29,820.67"
+,04/18/2026,Invoice,1644,Shopify - bfda6c-2 Customer,,Seahorse,Accounts Receivable (A/R),150.00,"29,970.67"
+,04/18/2026,Invoice,1646,Shopify - bfda6c-2 Customer,,Bowl,Accounts Receivable (A/R),20.00,"29,990.67"
+,04/18/2026,Invoice,1646,Shopify - bfda6c-2 Customer,,Teaset,Accounts Receivable (A/R),25.00,"30,015.67"
+,04/18/2026,Invoice,1646,Shopify - bfda6c-2 Customer,,Art,Accounts Receivable (A/R),112.00,"30,127.67"
+,04/18/2026,Invoice,1646,Shopify - bfda6c-2 Customer,,Bowl,Accounts Receivable (A/R),28.00,"30,155.67"
+,04/18/2026,Invoice,1647,Shopify - bfda6c-2 Customer,,Bamboo Pagoda Chandelier,Accounts Receivable (A/R),250.00,"30,405.67"
+,04/18/2026,Invoice,1647,Shopify - bfda6c-2 Customer,,Vintage two tiered tifon box with lid,Accounts Receivable (A/R),40.00,"30,445.67"
+,04/18/2026,Invoice,1647,Shopify - bfda6c-2 Customer,,Vintage foo dog opium pillow vase,Accounts Receivable (A/R),45.00,"30,490.67"
+,04/18/2026,Invoice,1647,Shopify - bfda6c-2 Customer,,Led table lamp,Accounts Receivable (A/R),30.00,"30,520.67"
+,04/18/2026,Invoice,1650,Shopify - bfda6c-2 Customer,,Book,Accounts Receivable (A/R),30.00,"30,550.67"
+,04/18/2026,Invoice,1652,Shopify - bfda6c-2 Customer,,"Vintage ceramic fish, trinket dish",Accounts Receivable (A/R),10.00,"30,560.67"
+,04/18/2026,Invoice,1652,Shopify - bfda6c-2 Customer,,Westmoreland cranberry glass vase with lid,Accounts Receivable (A/R),50.00,"30,610.67"
+,04/18/2026,Invoice,1652,Shopify - bfda6c-2 Customer,,Faux red coral,Accounts Receivable (A/R),10.00,"30,620.67"
+,04/18/2026,Invoice,1652,Shopify - bfda6c-2 Customer,,Vintage tobacco leaf plate,Accounts Receivable (A/R),90.00,"30,710.67"
+,04/18/2026,Invoice,1653,Shopify - bfda6c-2 Customer,,Adapt Italian lattice bowl on stand,Accounts Receivable (A/R),60.00,"30,770.67"
+,04/18/2026,Invoice,1653,Shopify - bfda6c-2 Customer,,Glass heart box,Accounts Receivable (A/R),15.00,"30,785.67"
+,04/18/2026,Invoice,1653,Shopify - bfda6c-2 Customer,,Vintage chinoiserie planter,Accounts Receivable (A/R),45.00,"30,830.67"
+,04/18/2026,Invoice,1656,Shopify - bfda6c-2 Customer,,Swan,Accounts Receivable (A/R),95.00,"30,925.67"
+,04/18/2026,Invoice,1656,Shopify - bfda6c-2 Customer,,Swan,Accounts Receivable (A/R),70.00,"30,995.67"
+,04/18/2026,Invoice,1657,Shopify - bfda6c-2 Customer,,Lamp,Accounts Receivable (A/R),15.00,"31,010.67"
+,04/18/2026,Invoice,1657,Shopify - bfda6c-2 Customer,,Shade,Accounts Receivable (A/R),41.00,"31,051.67"
+,04/18/2026,Invoice,1664,Shopify - bfda6c-2 Customer,,Custom sale,Accounts Receivable (A/R),65.00,"31,116.67"
+,04/18/2026,Invoice,1665,Shopify - bfda6c-2 Customer,,Necklace,Accounts Receivable (A/R),65.00,"31,181.67"
+,04/18/2026,Invoice,1667,Shopify - bfda6c-2 Customer,,Cherries,Accounts Receivable (A/R),40.00,"31,221.67"
+,04/18/2026,Invoice,1667,Shopify - bfda6c-2 Customer,,Bowl,Accounts Receivable (A/R),40.00,"31,261.67"
+,04/22/2026,Invoice,1670,Shopify - bfda6c-2 Customer,,Embroidered Diet Coke tea towel,Accounts Receivable (A/R),28.00,"31,289.67"
+,04/22/2026,Invoice,1671,Shopify - bfda6c-2 Customer,,Embroidered Diet Coke tea towel,Accounts Receivable (A/R),28.00,"31,317.67"
+,04/22/2026,Invoice,1673,Shopify - bfda6c-2 Customer,,Japanese kutani dish,Accounts Receivable (A/R),45.00,"31,362.67"
+,04/22/2026,Invoice,1673,Shopify - bfda6c-2 Customer,,Marbled poldina mini blue yellow pebble,Accounts Receivable (A/R),35.00,"31,397.67"
+,04/22/2026,Invoice,1673,Shopify - bfda6c-2 Customer,,LED touch lamp,Accounts Receivable (A/R),15.00,"31,412.67"
+,04/22/2026,Invoice,1676,Shopify - bfda6c-2 Customer,,Semi antique famille rose shallow bowl,Accounts Receivable (A/R),80.00,"31,492.67"
+,04/22/2026,Invoice,1677,Shopify - bfda6c-2 Customer,,Ronson toothpick holder,Accounts Receivable (A/R),30.00,"31,522.67"
+,04/22/2026,Invoice,1677,Shopify - bfda6c-2 Customer,,Vintage crystal bud vase,Accounts Receivable (A/R),25.00,"31,547.67"
+,04/22/2026,Invoice,1680,Shopify - bfda6c-2 Customer,,Scarf medallion necklace,Accounts Receivable (A/R),95.00,"31,642.67"
+,04/22/2026,Invoice,1680,Shopify - bfda6c-2 Customer,,Gold blossom bowl,Accounts Receivable (A/R),30.00,"31,672.67"
+,04/22/2026,Invoice,1680,Shopify - bfda6c-2 Customer,,Baccarat crystal Talleyrand decanter,Accounts Receivable (A/R),175.00,"31,847.67"
+,04/22/2026,Invoice,1679,Shopify - bfda6c-2 Customer,,Blue white sconce shade,Accounts Receivable (A/R),50.00,"31,897.67"
+,04/22/2026,Invoice,1679,Shopify - bfda6c-2 Customer,,Poldina mint mini shade,Accounts Receivable (A/R),41.00,"31,938.67"
+,04/22/2026,Invoice,1681,Shopify - bfda6c-2 Customer,,LED touch lamp,Accounts Receivable (A/R),30.00,"31,968.67"
+,04/22/2026,Invoice,1681,Shopify - bfda6c-2 Customer,,Small gold mirror,Accounts Receivable (A/R),25.00,"31,993.67"
+,04/22/2026,Invoice,1681,Shopify - bfda6c-2 Customer,,Green mini pleated lamp shade,Accounts Receivable (A/R),82.00,"32,075.67"
+,04/22/2026,Invoice,1681,Shopify - bfda6c-2 Customer,,Roe deer mount painted,Accounts Receivable (A/R),175.00,"32,250.67"
+,04/22/2026,Invoice,1681,Shopify - bfda6c-2 Customer,,Gold oyster,Accounts Receivable (A/R),20.00,"32,270.67"
+,04/22/2026,Invoice,1685,Shopify - bfda6c-2 Customer,,Brass coffee table,Accounts Receivable (A/R),150.00,"32,420.67"
+,04/22/2026,Invoice,1685,Shopify - bfda6c-2 Customer,,Blue and gold tole lantern,Accounts Receivable (A/R),315.00,"32,735.67"
+,04/24/2026,Invoice,1690,Shopify - bfda6c-2 Customer,,Cabbage divided server,Accounts Receivable (A/R),30.00,"32,765.67"
+,04/24/2026,Invoice,1690,Shopify - bfda6c-2 Customer,,Foo dog bowl,Accounts Receivable (A/R),75.00,"32,840.67"
+,04/24/2026,Invoice,1691,Shopify - bfda6c-2 Customer,,Yellow Italian jardiniere,Accounts Receivable (A/R),40.00,"32,880.67"
+,04/24/2026,Invoice,1691,Shopify - bfda6c-2 Customer,,Vintage enamel box,Accounts Receivable (A/R),25.00,"32,905.67"
+,04/24/2026,Invoice,1695,Shopify - bfda6c-2 Customer,,Antique French majolica mug,Accounts Receivable (A/R),50.00,"32,955.67"
+,04/24/2026,Invoice,1695,Shopify - bfda6c-2 Customer,,Venetian Glass marbled egg,Accounts Receivable (A/R),12.00,"32,967.67"
+,04/24/2026,Invoice,1695,Shopify - bfda6c-2 Customer,,Murano glass cherry,Accounts Receivable (A/R),10.00,"32,977.67"
+,04/24/2026,Invoice,1695,Shopify - bfda6c-2 Customer,,Alabaster pink lidded box,Accounts Receivable (A/R),20.00,"32,997.67"
+Total for Shopify Sales,,,,,,,,"$32,997.67",
+Total for Channel Sales with sub-accounts,,,,,,,,"$32,997.67",
+Channel Shipping Income,,,,,,,,,
+Shopify Shipping Income,,,,,,,,,
+,03/09/2025,Invoice,1105,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),25.00,25.00
+,04/10/2025,Invoice,1119,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,35.00
+,04/14/2025,Invoice,1134,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),5.00,40.00
+,04/14/2025,Invoice,1135,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,50.00
+,04/14/2025,Invoice,1137,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,60.00
+,04/22/2025,Invoice,1150,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,70.00
+,04/22/2025,Invoice,1152,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,80.00
+,04/22/2025,Invoice,1155,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,90.00
+,04/21/2025,Invoice,1165,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,105.00
+,04/24/2025,Invoice,1168,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,115.00
+,04/24/2025,Invoice,1169,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,125.00
+,04/24/2025,Invoice,1170,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,135.00
+,04/24/2025,Invoice,1172,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,145.00
+,04/25/2025,Invoice,1174,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,155.00
+,04/27/2025,Invoice,1176,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,165.00
+,04/30/2025,Invoice,1182,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,175.00
+,04/30/2025,Invoice,1183,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,190.00
+,04/30/2025,Invoice,1185,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,200.00
+,04/30/2025,Invoice,1186,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),12.00,212.00
+,04/30/2025,Invoice,1188,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,227.00
+,04/30/2025,Invoice,1192,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,242.00
+,05/08/2025,Invoice,1195,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),8.00,250.00
+,05/08/2025,Invoice,1196,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,260.00
+,05/08/2025,Invoice,1197,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,275.00
+,05/08/2025,Invoice,1198,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),18.00,293.00
+,05/08/2025,Invoice,1199,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,303.00
+,05/08/2025,Invoice,1200,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,313.00
+,05/08/2025,Invoice,1201,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),8.00,321.00
+,05/09/2025,Invoice,1203,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,331.00
+,05/09/2025,Invoice,1205,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),12.00,343.00
+,05/09/2025,Invoice,1207,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,358.00
+,05/10/2025,Invoice,1209,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),7.00,365.00
+,05/12/2025,Invoice,1211,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,375.00
+,06/04/2025,Invoice,1213,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),20.00,395.00
+,05/20/2025,Invoice,1215,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),50.00,445.00
+,06/03/2025,Invoice,1237,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),75.00,520.00
+,06/09/2025,Invoice,1269,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),20.00,540.00
+,06/11/2025,Invoice,1270,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,550.00
+,07/06/2025,Invoice,1276,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,565.00
+,07/15/2025,Invoice,1277,Shopify - bfda6c-2 Customer,Shopify - bfda6c-2,Shipping,Accounts Receivable (A/R),9.26,574.26
+,07/31/2025,Invoice,1280,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,589.26
+,10/02/2025,Invoice,1311,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,604.26
+,02/12/2026,Invoice,1371,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,619.26
+,03/06/2026,Invoice,1412,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,629.26
+,03/20/2026,Invoice,1486,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),10.00,639.26
+,03/24/2026,Invoice,1496,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,654.26
+,03/31/2026,Invoice,1499,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,669.26
+,03/31/2026,Invoice,1501,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),20.00,689.26
+,04/01/2026,Invoice,1505,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,704.26
+,04/01/2026,Invoice,1508,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,719.26
+,04/04/2026,Invoice,1515,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),15.00,734.26
+,04/18/2026,Invoice,1591,Shopify - bfda6c-2 Customer,,Shipping,Accounts Receivable (A/R),50.00,784.26
+Total for Shopify Shipping Income,,,,,,,,$784.26,
+Total for Channel Shipping Income with sub-accounts,,,,,,,,$784.26,
+Channel Discount,,,,,,,,,
+Shopify Discount,,,,,,,,,
+,04/10/2025,Invoice,1123,Shopify - bfda6c-2 Customer,,Discount,Accounts Receivable (A/R),-58.50,-58.50
+,04/10/2025,Invoice,1126,Shopify - bfda6c-2 Customer,,Discount,Accounts Receivable (A/R),-57.00,-115.50
+,05/09/2025,Invoice,1207,Shopify - bfda6c-2 Customer,,Discount,Accounts Receivable (A/R),-15.00,-130.50
+,08/28/2025,Invoice,1299,Shopify - bfda6c-2 Customer,,Discount,Accounts Receivable (A/R),-42.50,-173.00
+,01/05/2026,Invoice,1338,Shopify - bfda6c-2 Customer,,Discount,Accounts Receivable (A/R),-64.00,-237.00
+Total for Shopify Discount,,,,,,,,-$237.00,
+Total for Channel Discount with sub-accounts,,,,,,,,-$237.00,
+,TOTAL,,,,,,,"$39,921.95",
+
+
+
+"Cash Basis Friday, April 24, 2026 06:33 PM GMTZ",,,,,,,,,
