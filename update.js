@@ -102,11 +102,14 @@ function parseQuickBooks(dir) {
     const header = parseCSVLine(lines[headerIdx]);
     const dateIdx = header.indexOf('Transaction date');
     const amtIdx  = header.indexOf('Amount');
+    const nameIdx = header.indexOf('Name');
     for (const line of lines.slice(headerIdx + 1)) {
       if (!line.trim()) continue;
       const cols = parseCSVLine(line);
       const date = (cols[dateIdx] || '').trim();
       if (!/^\d{2}\/\d{2}\/\d{4}$/.test(date)) continue;
+      // Skip rows synced from Shopify — already captured in the Shopify JSONL
+      if ((cols[nameIdx] || '').includes('Shopify')) continue;
       const [mo, , yr] = date.split('/');
       const month = `${yr}-${mo}`;
       const amt = parseFloat((cols[amtIdx] || '').replace(/[$,]/g, ''));
