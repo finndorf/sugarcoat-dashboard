@@ -128,8 +128,8 @@ function parseJSONL(text) {
     try { row = JSON.parse(line); } catch { failed++; continue; }
     parsed++;
     if (!firstRow) firstRow = row;
-    const { month, hour, sales_channel, net_sales } = row;
-    const dateStr = month || hour;
+    const { month, hour, day, sales_channel, net_sales } = row;
+    const dateStr = month || hour || day;
     if (!dateStr || !sales_channel) continue;
     const m = dateStr.slice(0, 7);
     if (!out[m]) out[m] = { ig: 0, web: 0, ip: 0 };
