@@ -56,12 +56,13 @@ export default async function handler(req, res) {
   if (!reportRes.ok) return res.status(502).json({ error: `Mall-Central returned ${reportRes.status}` });
   const html = await reportRes.text();
 
-  // 2. Extract the CSV link (e.g. excel/excel_wwag_36_BjV2eShe.csv — expires in 10 min)
-  const match = html.match(/excel\/excel_wwag_\d+_\w+\.csv/);
+  // 2. Extract the CSV link — Mall-Central uses backslashes: ..\excel\excel_wwag_36_TOKEN.csv
+  const match = html.match(/excel[/\\]+excel_wwag_\d+_\w+\.csv/i);
   if (!match) return res.status(502).json({ error: 'CSV link not found in Mall-Central response — check credentials or no YTD sales available' });
+  const csvPath = match[0].replace(/\\/g, '/');
 
   // 3. Download the CSV immediately (before the 10-min expiry)
-  const csvRes = await fetch(`https://www.mall-central.com/${match[0]}`);
+  const csvRes = await fetch(`https://www.mall-central.com/${csvPath}`);
   if (!csvRes.ok) return res.status(502).json({ error: `CSV download failed: ${csvRes.status}` });
   const csvText = await csvRes.text();
 
