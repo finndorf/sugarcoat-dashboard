@@ -87,8 +87,12 @@ export default async function handler(req, res) {
   Object.assign(wwag, newWwag);
 
   // 7. Splice the updated wwag line back into the data block
-  const updated = indexHtml.replace(/(const wwag\s*=\s*)[^;]+;/, `$1${fmtObj(wwag)};`);
-  if (updated === indexHtml) return res.status(500).json({ error: 'Could not locate wwag variable in index.html' });
+  const WWAG_RE = /(const wwag\s*=\s*)[^;]+;/;
+  if (!WWAG_RE.test(indexHtml)) return res.status(500).json({ error: 'Could not locate wwag variable in index.html' });
+  const updated = indexHtml.replace(WWAG_RE, `$1${fmtObj(wwag)};`);
+  if (updated === indexHtml) {
+    return res.json({ success: true, noChange: true, months: Object.keys(newWwag).sort(), date: new Date().toISOString().slice(0, 10) });
+  }
 
   // 8. Commit to GitHub — Vercel auto-redeploys on push
   const today = new Date().toISOString().slice(0, 10);
