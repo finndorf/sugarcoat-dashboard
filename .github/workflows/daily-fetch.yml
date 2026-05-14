@@ -1,0 +1,30 @@
+name: Daily data fetch
+
+on:
+  schedule:
+    - cron: "0 8 * * *"   # 08:00 UTC = 3 AM CDT / 2 AM CST
+  workflow_dispatch:        # allow manual trigger from GitHub UI
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch WWAG data
+        run: |
+          response=$(curl -s -w "\n%{http_code}" -X POST https://sugarcoat-dashboard.vercel.app/api/fetch-wwag \
+            -H "Content-Type: application/json" \
+            -d "{\"secret\":\"${{ secrets.ADMIN_SECRET }}\"}")
+          body=$(echo "$response" | head -n -1)
+          status=$(echo "$response" | tail -n 1)
+          echo "WWAG response ($status): $body"
+          if [ "$status" != "200" ]; then exit 1; fi
+
+      - name: Fetch Shopify data
+        run: |
+          response=$(curl -s -w "\n%{http_code}" -X POST https://sugarcoat-dashboard.vercel.app/api/fetch-shopify \
+            -H "Content-Type: application/json" \
+            -d "{\"secret\":\"${{ secrets.ADMIN_SECRET }}\"}")
+          body=$(echo "$response" | head -n -1)
+          status=$(echo "$response" | tail -n 1)
+          echo "Shopify response ($status): $body"
+          if [ "$status" != "200" ]; then exit 1; fi
