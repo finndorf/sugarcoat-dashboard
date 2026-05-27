@@ -156,6 +156,17 @@ function buildBlock(allMonths, dataIG, dataWeb, dataIP, wwag) {
 }
 
 export default async function handler(req, res) {
+  try {
+    return await commitHandler(req, res);
+  } catch (err) {
+    console.error('[commit] unhandled:', err?.stack || err);
+    if (!res.headersSent) {
+      return res.status(500).json({ error: 'commit crashed', detail: String(err?.message || err), at: err?.stack?.split('\n')[1]?.trim() });
+    }
+  }
+}
+
+async function commitHandler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
 
   const { secret, byMonth, wwag: wwagOverride } = req.body;
